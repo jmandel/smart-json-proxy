@@ -1,0 +1,17 @@
+{
+  "@vocab": "http://smartplatforms.org/terms#",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "label": "rdf:label",
+  "url": "@id",
+  "type": "@type",
+  "homepage": {
+    "@id": "http://xmlns.com/foaf/0.1/homepage",
+    "@type": "@id"
+  },
+  "patient": {"@id": "belongsTo", "@type": "@id"},
+  "Medication":{"@type": "@id"},
+  "medication":{"@type": "@id"},
+  "fulfillments":{"@type": "@id"},
+  "Fulfillment":{"@type": "@id"},
+  "self":{"@type": "@id"}
+}
