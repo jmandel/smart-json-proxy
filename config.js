@@ -21,3 +21,8 @@ module.exports.proxy = {
     return ee;
   }
 };
+
+module.exports.SERVER_PRODUCTION_DEFAULT = 'application/json';
+module.exports.CLIENT_ACCEPT_DEFAULT = 'application/xml+rdf';
+module.exports.BACKEND_SERVER = 'http://smart-backend-server';
+
