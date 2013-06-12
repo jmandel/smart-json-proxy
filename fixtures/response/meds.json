@@ -29,33 +29,33 @@
     "http://sandbox-api.smartplatforms.org/records/2169591/fulfillments/def": {
       "url": "http://sandbox-api.smartplatforms.org/records/2169591/fulfillments/def",
       "type": "Fulfillment", 
+      "medication": "http://sandbox-api.smartplatforms.org/records/2169591/medications/123",
       "patient": "http://sandbox-api.smartplatforms.org/records/2169591",
       "date": "2010-05-12T04:00:00Z",
       "dispenseDaysSupply": 30,
-      "medication": "http://sandbox-api.smartplatforms.org/records/2169591/medications/123"
-    },
-    "pbm": "T00000000001011",
-    "pharmacy": {
-      "ncpdpId": "5235235",
-      "address": {
-        "countryName": "Australia",
-        "locality": "WonderCity",
-        "postalCode": "5555",
-        "streetAddress": "111 Lake Drive"
+      "pbm": "T00000000001011",
+      "pharmacy": {
+        "ncpdpId": "5235235",
+        "address": {
+          "countryName": "Australia",
+          "locality": "WonderCity",
+          "postalCode": "5555",
+          "streetAddress": "111 Lake Drive"
+        },
+        "organizationName": "CVS #588"
       },
-      "organizationName": "CVS #588"
-    },
-    "provider": {
-      "deaNumber": "325555555",
-      "npiNumber": "5235235",
-      "name": {
-        "familyName": "Mandel",
-        "givenName": "Joshua"
+      "provider": {
+        "deaNumber": "325555555",
+        "npiNumber": "5235235",
+        "name": {
+          "familyName": "Mandel",
+          "givenName": "Joshua"
+        }
+      },
+      "quantityDispensed": {
+        "value": 60,
+        "unit": "{tablet}"
       }
-    },
-    "quantityDispensed": {
-      "value": 60,
-      "unit": "{tablet}"
     }
   },
   "summary": {
