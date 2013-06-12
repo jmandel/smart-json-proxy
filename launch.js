@@ -10,9 +10,10 @@ app.use(require('./lib/bodyParser'));
 
 // works in a proxy mode, by relaying requests to the underlying container
 // implementation, then converting MIME types on the fly
-app.get('/records/*', function(req, res, next){
+
+function fetch(section, req, res){
   var target = getTarget(req);
-  proxy.get(config.BACKEND_SERVER + req.url)
+  proxy.get(section)
   .on('complete', function(data, response){
     convert({
       from: response.headers['content-type'],
@@ -24,6 +25,15 @@ app.get('/records/*', function(req, res, next){
     });
   });
 
+
+};
+
+app.get('/records/:rId/medications*', function(req, res, next){
+  fetch('medications', req, res, next);
+});
+
+app.get('/records/:rId/vital_sign_sets*', function(req, res, next){
+  fetch('vital_sign_sets', req, res, next);
 });
 
 // works in an explicit conversion mode, where data are POSTed and 

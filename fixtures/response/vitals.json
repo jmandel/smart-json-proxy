@@ -1,0 +1,77 @@
+{
+  "type": "Response",
+  "payload":  {
+    "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets/823523": {
+      "url": "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets/823523",
+      "type": "VitalSignSet",
+      "encounter": "http://sandbox-api.smartplatforms.org/records/2169591/encounters/252352",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "code": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+          "label": "Sitting"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "code": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+          "label": "Right arm"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": "82",
+          "vitalName": {
+            "code": "8462-4",
+            "label": "Intravascular diastolic"
+          }
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": "132",
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+            "code": "8480-6",
+            "label": "Intravascular sysstolic"
+          }
+        }
+      },
+      "height": {
+        "unit": "cm",
+        "value": "180",
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+          "code": "8302-2",
+          "label": "Body height"
+        }
+      }
+    },
+    "http://sandbox-api.smartplatforms.org/records/2169591/encounters/252352": {
+      "url": "http://sandbox-api.smartplatforms.org/records/2169591/encounters/252352",
+      "type": "Encounter",
+      "encounterType": {
+        "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+        "system": "http://smartplatforms.org/terms/codes/EncounterType#",
+        "code": "ambulatory",
+        "label": "Ambulatory encounter"
+      },
+      "endDate": "2010-05-12T04:20:00Z",
+      "startDate": "2010-05-12T04:00:00Z"
+    }
+  },
+  "summary": {
+    "processingTimeMs": 120,
+    "self": "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets",
+    "index": {
+      "VitalSignSet": [
+        "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets/823523"
+      ],
+      "Encounter": [
+        "http://sandbox-api.smartplatforms.org/records/2169591/encounters/25235"
+      ]
+    }
+  }
+}
+

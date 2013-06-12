@@ -3,7 +3,12 @@ var fs = require('fs');
 
 // just a fixture for now
 
-var medResponse = require('./fixtures/response/meds.json');
+var fixtures = {
+  "medications": require('./fixtures/response/meds.json'),
+  "vital_sign_sets": require('./fixtures/response/vitals.json')
+};
+
+
 
 module.exports.proxy = {
   get: function(url){
@@ -11,7 +16,7 @@ module.exports.proxy = {
     var ee = new events.EventEmitter();
     process.nextTick(function(){
       console.log('emitting');
-      ee.emit('complete', medResponse, {
+      ee.emit('complete', fixtures[url], {
         responseCode: 200,
         headers: {
           'content-type': 'application/json'
