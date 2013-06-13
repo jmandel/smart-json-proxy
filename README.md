@@ -13,7 +13,7 @@ Explicit POST to `/convert` to convert on-demand
 `sample_container/convert.js` is a browserify'd version that runs client-side
 
 ---
-To re-generated `convert.js`:
+To re-generate `convert.js`:
 
 ```
 npm install -g browserify
