@@ -1,78 +1,72 @@
 {
-  "payload":  {
-    "http://smart-sever/records/123/vital_sign_sets/823523": {
-      "url": "http://smart-sever/records/123/vital_sign_sets/823523",
-      "patient": "http://smart-sever/records/123",
-      "type": "VitalSignSet",
-      "date": "2010-05-12T04:20:00Z",
-      "encounter": "http://smart-sever/records/123/encounters/252352",
-      "bloodPressure": {
-        "bodyPosition": {
-          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
-          "code": "33586001",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "label": "Sitting"
-        },
-        "bodySite": {
-          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
-          "code": "368209003",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "label": "Right arm"
-        },
-        "diastolic": {
-          "unit": "mm[Hg]",
-          "value": 82,
-          "vitalName": {
-            "code": "8462-4",
-            "label": "Intravascular diastolic"
-          }
-        },
-        "systolic": {
-          "unit": "mm[Hg]",
-          "value": 132,
-          "vitalName": {
-            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
-            "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-            "code": "8480-6",
-            "label": "Intravascular sysstolic"
-          }
-        }
+  "type": "Response",
+  "payload": {
+    "http://smart-server/records/2169591/medications/123": {
+      "url": "http://smart-server/records/2169591/medications/123",
+      "type": "Medication",
+      "patient": "http://smart-server/records/2169591",
+      "drugName": {
+        "label": "Amitriptyline HCl 50 mg tab",
+        "url": "http://purl.bioontology.org/ontology/RXNORM/856845",
+        "system": "RxNorm",
+        "code": "856845"
       },
-      "height": {
-        "unit": "cm",
-        "value": 180,
-        "vitalName": {
-          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "code": "8302-2",
-          "label": "Body height"
-        }
-      }
+      "startDate": "2007-03-14",
+      "endDate": "2007-08-14",
+      "frequency": {
+        "value": 2,
+        "unit": "/d"
+      },
+      "instructions": "Take two tablets twice daily as needed for pain",
+      "quantity": {
+        "value": 2,
+        "unit": "{tablet}"
+      },
+      "fulfillments": [
+        "http://smart-server/records/2169591/fulfillments/def"
+      ]
     },
-    "http://smart-sever/records/123/encounters/252352": {
-      "url": "http://smart-sever/records/123/encounters/252352",
-      "type": "Encounter",
-      "patient": "http://smart-sever/records/123",
-      "encounterType": {
-        "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
-        "system": "http://smartplatforms.org/terms/codes/EncounterType#",
-        "code": "ambulatory",
-        "label": "Ambulatory encounter"
+    "http://smart-server/records/2169591/fulfillments/def": {
+      "url": "http://smart-server/records/2169591/fulfillments/def",
+      "type": "Fulfillment", 
+      "medication": "http://smart-server/records/2169591/medications/123",
+      "patient": "http://smart-server/records/2169591",
+      "date": "2010-05-12T04:00:00Z",
+      "dispenseDaysSupply": 30,
+      "pbm": "T00000000001011",
+      "pharmacy": {
+        "ncpdpId": "5235235",
+        "address": {
+          "country": "Australia",
+          "locality": "WonderCity",
+          "postalCode": "5555",
+          "streetAddress": "111 Lake Drive"
+        },
+        "organizationName": "CVS #588"
       },
-      "endDate": "2010-05-12T04:20:00Z",
-      "startDate": "2010-05-12T04:00:00Z"
+      "provider": {
+        "deaNumber": "325555555",
+        "npiNumber": "5235235",
+        "name": {
+          "familyName": "Mandel",
+          "givenName": "Joshua"
+        }
+      },
+      "quantityDispensed": {
+        "value": 60,
+        "unit": "{tablet}"
+      }
     }
   },
   "summary": {
-    "type": "Response",
-    "processingTimeMs": 120,
-    "self": "http://smart-sever/records/123/vital_sign_sets",
+    "processingTimeMs": 85,
+    "self": "http://smart-server/records/2169591/medications",
     "index": {
-      "VitalSignSet": [
-        "http://smart-sever/records/123/vital_sign_sets/823523"
+      "Medication": [
+        "http://smart-server/records/2169591/medications/789"
       ],
-      "Encounter": [
-        "http://smart-sever/records/123/encounters/25235"
+      "Fulfillment": [
+        "http://smart-server/records/2169591/fulfillments/def"
       ]
     }
   }
