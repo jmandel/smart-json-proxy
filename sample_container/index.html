@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>SMART Container Example</title>
     <link rel='stylesheet' href='styles.css' type='text/css' />
     <script src="jquery.min.js"></script>
     <script src="jschannel.js"></script>
     <script src="smart-api-container.js"></script>
+
+    <!-- The following two scripts support on-the-fly in-browser
+    conversion of simplified JSON strucures to SMART RDF -->
     <script src="jsonld.js"></script>
     <script src="convert.js"></script>
   </head>
+
   <body>
     <script>
-      /* Sample implementations of SMART Connect Host glue methods */
+      // Sample implementations of SMART Connect Host glue methods
       SMART = new SMART_CONNECT_HOST();
 
       SMART.get_iframe = function(app_instance, callback) {
@@ -22,21 +27,44 @@
 
 
       SMART.handle_api = function(app_instance, api_call, callback_success, callback_error) {
-        // Implementation of the get medications API call which feeds the data from a static file
 
+        // We'll serve up data from three static fixtures
+        // each represented by a simplified JSON file
+        var fixture = getFixture(api_call);
+
+        // If one of our fixtures fits the bill...
+        // Get the content, then process it into SMART RDF/XML
+        if (api_call.method=="GET" && fixture !== null){
+          fixture.success(process);
+          } else {
+          alert("Function " + api_call.func + " not implemented yet.");
+        }
+
+        // converts a JSON structure into SMART RDF/XML
         function process(data){
           convert({
             from: "application/json",
             to: "application/rdf+xml",
             body: data
             }, function(err, rdf){
+
+            // Invoke the caller's error handler if something went wrong
+            if (err){
+              return callback_error(err);
+            }
+
+            // Othrwise, pass the generated RDF content
+            // to the app's success handler
             callback_success({
               contentType: "application/rdf+xml",  
               data: rdf
             })
+
           });
         };
+      };
 
+      function getFixture(api_call){
         var fixture = null;
         if (api_call.func.match(/^.*\/demographics$/)) {
           fixture =  "../fixtures/response/demographics.json";
@@ -48,16 +76,17 @@
           fixture =  "../fixtures/response/vitals.json";
         }
 
-        if (api_call.method=="GET" && fixture !== null){
-          $.ajax({
+        if (fixture){
+          return $.ajax({
             type: 'get', 
             url: fixture,
             dataType: 'text'
-          }).success(process);
-        } else {
-          alert("Function " + api_call.func + " not implemented yet.");
+          })
         }
+
+        return null;
       };
+
 
       /* Sample context and manifests for our container */
 
