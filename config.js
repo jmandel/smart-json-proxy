@@ -5,7 +5,8 @@ var fs = require('fs');
 
 var fixtures = {
   "medications": require('./fixtures/response/meds.json'),
-  "vital_sign_sets": require('./fixtures/response/vitals.json')
+  "vital_sign_sets": require('./fixtures/response/vitals.json'),
+  "demographics": require('./fixtures/response/demographics.json')
 };
 
 

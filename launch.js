@@ -28,6 +28,10 @@ function fetch(section, req, res){
 
 };
 
+app.get('/records/:rId/demographics*', function(req, res, next){
+  fetch('demographics', req, res, next);
+});
+
 app.get('/records/:rId/medications*', function(req, res, next){
   fetch('medications', req, res, next);
 });

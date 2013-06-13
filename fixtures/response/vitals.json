@@ -1,11 +1,11 @@
 {
   "payload":  {
-    "http://smart-sever/records/2169591/vital_sign_sets/823523": {
-      "url": "http://smart-sever/records/2169591/vital_sign_sets/823523",
-      "patient": "http://smart-sever/records/2169591",
+    "http://smart-sever/records/123/vital_sign_sets/823523": {
+      "url": "http://smart-sever/records/123/vital_sign_sets/823523",
+      "patient": "http://smart-sever/records/123",
       "type": "VitalSignSet",
       "date": "2010-05-12T04:20:00Z",
-      "encounter": "http://smart-sever/records/2169591/encounters/252352",
+      "encounter": "http://smart-sever/records/123/encounters/252352",
       "bloodPressure": {
         "bodyPosition": {
           "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
@@ -49,10 +49,10 @@
         }
       }
     },
-    "http://smart-sever/records/2169591/encounters/252352": {
-      "url": "http://smart-sever/records/2169591/encounters/252352",
+    "http://smart-sever/records/123/encounters/252352": {
+      "url": "http://smart-sever/records/123/encounters/252352",
       "type": "Encounter",
-      "patient": "http://smart-sever/records/2169591",
+      "patient": "http://smart-sever/records/123",
       "encounterType": {
         "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
         "system": "http://smartplatforms.org/terms/codes/EncounterType#",
@@ -66,13 +66,13 @@
   "summary": {
     "type": "Response",
     "processingTimeMs": 120,
-    "self": "http://smart-sever/records/2169591/vital_sign_sets",
+    "self": "http://smart-sever/records/123/vital_sign_sets",
     "index": {
       "VitalSignSet": [
-        "http://smart-sever/records/2169591/vital_sign_sets/823523"
+        "http://smart-sever/records/123/vital_sign_sets/823523"
       ],
       "Encounter": [
-        "http://smart-sever/records/2169591/encounters/25235"
+        "http://smart-sever/records/123/encounters/25235"
       ]
     }
   }

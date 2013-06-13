@@ -16,8 +16,21 @@
   },
   "patient": {"@id": "belongsTo", "@type": "@id"},
   "date": "dc:date",
-  "name": "v:n",
+  "additionalName": {"@id": "v:additional-name", "@container": "@set"},
   "familyName": "v:family-name",
+  "phone": "v:tel",
+  "Cell": "v:Cell",
+  "Pref": "v:Pref",
+  "Home": "v:Home",
+  "Work": "v:Work",
+  "Fulfillment":{"@type": "@id"},
+  "Fulfillment":{"@type": "@id"},
+  "Fulfillment":{"@type": "@id"},
+  "Fulfillment":{"@type": "@id"},
+  "name": "v:n",
+  "email": "v:email",
+  "birthdate": "v:bday",
+  "deathdate": "v:deathdate",
   "givenName": "v:given-name",
   "address": "v:adr",
   "streetAddress": "v:street-address",
@@ -31,5 +44,8 @@
   "fulfillments":{"@type": "@id"},
   "encounter":{"@type": "@id"},
   "Fulfillment":{"@type": "@id"},
-  "self":{"@type": "@id"}
+  "self":{"@type": "@id"},
+  "gender": "foaf:gender",
+  "medicalRecordNumber": {"@container": "@set"}
+
 }
