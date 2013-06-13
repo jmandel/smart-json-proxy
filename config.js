@@ -12,10 +12,8 @@ var fixtures = {
 
 module.exports.proxy = {
   get: function(url){
-    console.log(url);
     var ee = new events.EventEmitter();
     process.nextTick(function(){
-      console.log('emitting');
       ee.emit('complete', fixtures[url], {
         responseCode: 200,
         headers: {
@@ -28,6 +26,6 @@ module.exports.proxy = {
 };
 
 module.exports.SERVER_PRODUCTION_DEFAULT = 'application/json';
-module.exports.CLIENT_ACCEPT_DEFAULT = 'application/xml+rdf';
+module.exports.CLIENT_ACCEPT_DEFAULT = 'application/rdf+xml';
 module.exports.BACKEND_SERVER = 'http://smart-backend-server';
 

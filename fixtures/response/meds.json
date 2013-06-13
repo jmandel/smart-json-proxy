@@ -37,7 +37,7 @@
       "pharmacy": {
         "ncpdpId": "5235235",
         "address": {
-          "countryName": "Australia",
+          "country": "Australia",
           "locality": "WonderCity",
           "postalCode": "5555",
           "streetAddress": "111 Lake Drive"

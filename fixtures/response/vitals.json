@@ -1,10 +1,11 @@
 {
-  "type": "Response",
   "payload":  {
-    "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets/823523": {
-      "url": "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets/823523",
+    "http://smart-sever/records/2169591/vital_sign_sets/823523": {
+      "url": "http://smart-sever/records/2169591/vital_sign_sets/823523",
+      "patient": "http://smart-sever/records/2169591",
       "type": "VitalSignSet",
-      "encounter": "http://sandbox-api.smartplatforms.org/records/2169591/encounters/252352",
+      "date": "2010-05-12T04:20:00Z",
+      "encounter": "http://smart-sever/records/2169591/encounters/252352",
       "bloodPressure": {
         "bodyPosition": {
           "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
@@ -20,7 +21,7 @@
         },
         "diastolic": {
           "unit": "mm[Hg]",
-          "value": "82",
+          "value": 82,
           "vitalName": {
             "code": "8462-4",
             "label": "Intravascular diastolic"
@@ -28,7 +29,7 @@
         },
         "systolic": {
           "unit": "mm[Hg]",
-          "value": "132",
+          "value": 132,
           "vitalName": {
             "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
             "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
@@ -39,7 +40,7 @@
       },
       "height": {
         "unit": "cm",
-        "value": "180",
+        "value": 180,
         "vitalName": {
           "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
           "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
@@ -48,9 +49,10 @@
         }
       }
     },
-    "http://sandbox-api.smartplatforms.org/records/2169591/encounters/252352": {
-      "url": "http://sandbox-api.smartplatforms.org/records/2169591/encounters/252352",
+    "http://smart-sever/records/2169591/encounters/252352": {
+      "url": "http://smart-sever/records/2169591/encounters/252352",
       "type": "Encounter",
+      "patient": "http://smart-sever/records/2169591",
       "encounterType": {
         "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
         "system": "http://smartplatforms.org/terms/codes/EncounterType#",
@@ -62,16 +64,16 @@
     }
   },
   "summary": {
+    "type": "Response",
     "processingTimeMs": 120,
-    "self": "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets",
+    "self": "http://smart-sever/records/2169591/vital_sign_sets",
     "index": {
       "VitalSignSet": [
-        "http://sandbox-api.smartplatforms.org/records/2169591/vital_sign_sets/823523"
+        "http://smart-sever/records/2169591/vital_sign_sets/823523"
       ],
       "Encounter": [
-        "http://sandbox-api.smartplatforms.org/records/2169591/encounters/25235"
+        "http://smart-sever/records/2169591/encounters/25235"
       ]
     }
   }
 }
-
