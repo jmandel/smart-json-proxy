@@ -20,7 +20,7 @@
       "value": 2,
       "unit": "{tablet}"
     },
-    "fulfillments": [
+    "fulfillment": [
       "http://smart-server/records/2169591/fulfillments/def",
       "http://smart-server/records/2169591/fulfillments/ghi"
     ]

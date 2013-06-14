@@ -1,61 +1,53 @@
 {
-  "payload":  {
-    "http://sandbox-api.smartplatforms.org/records/2169591/demographics": {
-      "url": "http://sandbox-api.smartplatforms.org/records/2169591/demographics",
-      "type": "Demographics",
-      "patient":  "http://sandbox-api.smartplatforms.org/records/2169591",
-      "ethnicity": "Welsh",
-      "gender": "male",
-      "medicalRecordNumber": [{
-        "code": "2304575",
-        "label": "My Hospital Record 2304575",
-        "system": "My Hospital Record"
-      }],
-      "preferredLanguage": "English",
-      "race": "Caucasian",
-      "address": {
-        "type": [
-          "Pref",
-          "Home",
-          "Address"
-        ],
-        "country": "USA",
-        "streetAddress": "15 Main St",
-        "extendedAddress": "Apt 2",
-        "locality": "Wonderland",
-        "region": "OZ",
-        "postalCode": "54321"
-      },
-      "birthdate": "2001-12-25",
-      "deathdate": "2012-11-18",
-      "email": [
-        "bob.odenkirk@example.com"
+  "data":  [{
+    "url": "http://sandbox-api.smartplatforms.org/records/2169591/demographics",
+    "type": "Demographics",
+    "patient":  "http://sandbox-api.smartplatforms.org/records/2169591",
+    "ethnicity": "Welsh",
+    "gender": "male",
+    "medicalRecordNumber": [{
+      "code": "2304575",
+      "label": "My Hospital Record 2304575",
+      "system": "My Hospital Record"
+    }],
+    "preferredLanguage": "English",
+    "race": "Caucasian",
+    "address": {
+      "type": [
+        "Pref",
+        "Home",
+        "Address"
       ],
-      "name": {
-        "givenName": "Bob",
-        "additionalName": ["J"],
-        "familyName": "Odenkirk"
-      },
-      "phone": [
-        {
-          "type": ["Cell"],
-          "number": "800-555-1515"
-        }, {
-          "type": ["Pref", "Home"],
-          "number": "800-555-1212"
-        }
-      ]
-    }
-  },
+      "country": "USA",
+      "streetAddress": "15 Main St",
+      "extendedAddress": "Apt 2",
+      "locality": "Wonderland",
+      "region": "OZ",
+      "postalCode": "54321"
+    },
+    "birthdate": "2001-12-25",
+    "deathdate": "2012-11-18",
+    "email": [
+      "bob.odenkirk@example.com"
+    ],
+    "name": {
+      "givenName": "Bob",
+      "additionalName": ["J"],
+      "familyName": "Odenkirk"
+    },
+    "phone": [
+      {
+        "type": ["Cell"],
+        "number": "800-555-1515"
+      }, {
+        "type": ["Pref", "Home"],
+        "number": "800-555-1212"
+      }
+    ]
+  }],
   "summary": {
     "type": "Response",
     "processingTimeMs": 120,
-    "self": "http://sandbox-api.smartplatforms.org/records/2169591/demographics",
-    "index": {
-      "Demographics": [
-        "http://sandbox-api.smartplatforms.org/records/2169591/demographics"
-      ]
-    }
+    "self": "http://sandbox-api.smartplatforms.org/records/2169591/demographics"
   }
 }
-
