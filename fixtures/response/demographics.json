@@ -6,7 +6,7 @@
     "ethnicity": "Welsh",
     "gender": "male",
     "medicalRecordNumber": [{
-      "code": "2304575",
+      "identifier": "2304575",
       "label": "My Hospital Record 2304575",
       "system": "My Hospital Record"
     }],

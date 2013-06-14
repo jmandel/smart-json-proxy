@@ -11,7 +11,7 @@
       "encounterType": {
         "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
         "system": "http://smartplatforms.org/terms/codes/EncounterType#",
-        "code": "ambulatory",
+        "identifier": "ambulatory",
         "label": "Ambulatory encounter"
       },
       "endDate": "2010-05-12T04:20:00Z",
@@ -20,13 +20,13 @@
     "bloodPressure": {
       "bodyPosition": {
         "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
-        "code": "33586001",
+        "identifier": "33586001",
         "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
         "label": "Sitting"
       },
       "bodySite": {
         "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
-        "code": "368209003",
+        "identifier": "368209003",
         "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
         "label": "Right arm"
       },
@@ -36,7 +36,7 @@
         "vitalName": {
           "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
           "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "code": "8462-4",
+          "identifier": "8462-4",
           "label": "Intravascular diastolic"
         }
       },
@@ -46,7 +46,7 @@
         "vitalName": {
           "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
           "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "code": "8480-6",
+          "identifier": "8480-6",
           "label": "Intravascular sysstolic"
         }
       }
@@ -57,7 +57,7 @@
       "vitalName": {
         "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
         "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-        "code": "8302-2",
+        "identifier": "8302-2",
         "label": "Body height"
       }
     }

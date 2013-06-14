@@ -42,11 +42,15 @@
 
         // converts a JSON structure into SMART RDF/XML
         function process(data){
+          console.log("converting");
+          console.log(data);
           convert({
             from: "application/json",
             to: "application/rdf+xml",
             body: data
             }, function(err, rdf){
+              console.log("rdf");
+              console.log(rdf, err);
 
             // Invoke the caller's error handler if something went wrong
             if (err){
