@@ -1,55 +1,10 @@
 {
-  "payload":  {
-    "http://smart-sever/records/123/vital_sign_sets/823523": {
-      "url": "http://smart-sever/records/123/vital_sign_sets/823523",
-      "patient": "http://smart-sever/records/123",
-      "type": "VitalSignSet",
-      "date": "2010-05-12T04:20:00Z",
-      "encounter": "http://smart-sever/records/123/encounters/252352",
-      "bloodPressure": {
-        "bodyPosition": {
-          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
-          "code": "33586001",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "label": "Sitting"
-        },
-        "bodySite": {
-          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
-          "code": "368209003",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "label": "Right arm"
-        },
-        "diastolic": {
-          "unit": "mm[Hg]",
-          "value": 82,
-          "vitalName": {
-            "code": "8462-4",
-            "label": "Intravascular diastolic"
-          }
-        },
-        "systolic": {
-          "unit": "mm[Hg]",
-          "value": 132,
-          "vitalName": {
-            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
-            "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-            "code": "8480-6",
-            "label": "Intravascular sysstolic"
-          }
-        }
-      },
-      "height": {
-        "unit": "cm",
-        "value": 180,
-        "vitalName": {
-          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "code": "8302-2",
-          "label": "Body height"
-        }
-      }
-    },
-    "http://smart-sever/records/123/encounters/252352": {
+  "data":  [{
+    "url": "http://smart-sever/records/123/vital_sign_sets/823523",
+    "type": "VitalSignSet",
+    "patient": "http://smart-sever/records/123",
+    "date": "2010-05-12T04:20:00Z",
+    "encounter": {
       "url": "http://smart-sever/records/123/encounters/252352",
       "type": "Encounter",
       "patient": "http://smart-sever/records/123",
@@ -61,19 +16,55 @@
       },
       "endDate": "2010-05-12T04:20:00Z",
       "startDate": "2010-05-12T04:00:00Z"
+    },
+    "bloodPressure": {
+      "bodyPosition": {
+        "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+        "code": "33586001",
+        "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+        "label": "Sitting"
+      },
+      "bodySite": {
+        "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+        "code": "368209003",
+        "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+        "label": "Right arm"
+      },
+      "diastolic": {
+        "unit": "mm[Hg]",
+        "value": 82,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+          "code": "8462-4",
+          "label": "Intravascular diastolic"
+        }
+      },
+      "systolic": {
+        "unit": "mm[Hg]",
+        "value": 132,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+          "code": "8480-6",
+          "label": "Intravascular sysstolic"
+        }
+      }
+    },
+    "height": {
+      "unit": "cm",
+      "value": 180,
+      "vitalName": {
+        "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+        "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+        "code": "8302-2",
+        "label": "Body height"
+      }
     }
-  },
+  }],
   "summary": {
     "type": "Response",
     "processingTimeMs": 120,
-    "self": "http://smart-sever/records/123/vital_sign_sets",
-    "index": {
-      "VitalSignSet": [
-        "http://smart-sever/records/123/vital_sign_sets/823523"
-      ],
-      "Encounter": [
-        "http://smart-sever/records/123/encounters/25235"
-      ]
-    }
+    "url": "http://smart-sever/records/123/vital_sign_sets"
   }
 }

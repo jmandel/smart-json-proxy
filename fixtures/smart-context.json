@@ -1,21 +1,18 @@
 {
   "@vocab": "http://smartplatforms.org/terms#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
   "sp": "http://smartplatforms.org/terms#",
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-  "dc":	"http://purl.org/dc/terms/",
+  "dcterms":	"http://purl.org/dc/terms/",
   "foaf":	"http://xmlns.com/foaf/0.1/",
   "v": "http://www.w3.org/2006/vcard/ns#",
-  "identifier": "dc:identifier",
-  "label": "dc:title",
+  "identifier": "dcterms:identifier",
+  "label": "dcterms:title",
   "url": "@id",
   "system": {"@type": "@id"},
   "type": "@type",
-  "homepage": {
-    "@id": "http://xmlns.com/foaf/0.1/homepage",
-    "@type": "@id"
-  },
   "patient": {"@id": "belongsTo", "@type": "@id"},
-  "date": "dc:date",
+  "date": "dcterms:date",
   "additionalName": {"@id": "v:additional-name", "@container": "@set"},
   "familyName": "v:family-name",
   "phone": "v:tel",
@@ -23,9 +20,6 @@
   "Pref": "v:Pref",
   "Home": "v:Home",
   "Work": "v:Work",
-  "Fulfillment":{"@type": "@id"},
-  "Fulfillment":{"@type": "@id"},
-  "Fulfillment":{"@type": "@id"},
   "Fulfillment":{"@type": "@id"},
   "name": "v:n",
   "email": "v:email",
@@ -38,7 +32,7 @@
   "region": "v:region",
   "postalCode": "v:postal-code",
   "country": "v:country",
-  "locality": "v:country",
+  "locality": "v:locality",
   "Medication":{"@type": "@id"},
   "medication":{"@type": "@id"},
   "fulfillments":{"@type": "@id"},
@@ -47,5 +41,4 @@
   "self":{"@type": "@id"},
   "gender": "foaf:gender",
   "medicalRecordNumber": {"@container": "@set"}
-
 }

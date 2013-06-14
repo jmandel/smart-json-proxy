@@ -1,73 +1,92 @@
 {
-  "type": "Response",
-  "payload": {
-    "http://smart-server/records/2169591/medications/123": {
-      "url": "http://smart-server/records/2169591/medications/123",
-      "type": "Medication",
-      "patient": "http://smart-server/records/2169591",
-      "drugName": {
-        "label": "Amitriptyline HCl 50 mg tab",
-        "url": "http://purl.bioontology.org/ontology/RXNORM/856845",
-        "system": "RxNorm",
-        "code": "856845"
-      },
-      "startDate": "2007-03-14",
-      "endDate": "2007-08-14",
-      "frequency": {
-        "value": 2,
-        "unit": "/d"
-      },
-      "instructions": "Take two tablets twice daily as needed for pain",
-      "quantity": {
-        "value": 2,
-        "unit": "{tablet}"
-      },
-      "fulfillments": [
-        "http://smart-server/records/2169591/fulfillments/def"
-      ]
+  "data": [{
+    "url": "http://smart-server/records/2169591/medications/123",
+    "type": "Medication",
+    "patient": "http://smart-server/records/2169591",
+    "drugName": {
+      "label": "Amitriptyline HCl 50 mg tab",
+      "url": "http://purl.bioontology.org/ontology/RXNORM/856845",
+      "system": "RxNorm",
+      "code": "856845"
     },
-    "http://smart-server/records/2169591/fulfillments/def": {
-      "url": "http://smart-server/records/2169591/fulfillments/def",
-      "type": "Fulfillment", 
-      "medication": "http://smart-server/records/2169591/medications/123",
-      "patient": "http://smart-server/records/2169591",
-      "date": "2010-05-12T04:00:00Z",
-      "dispenseDaysSupply": 30,
-      "pbm": "T00000000001011",
-      "pharmacy": {
-        "ncpdpId": "5235235",
-        "address": {
-          "country": "Australia",
-          "locality": "WonderCity",
-          "postalCode": "5555",
-          "streetAddress": "111 Lake Drive"
-        },
-        "organizationName": "CVS #588"
+    "startDate": "2007-03-14",
+    "endDate": "2007-08-14",
+    "frequency": {
+      "value": 2,
+      "unit": "/d"
+    },
+    "instructions": "Take two tablets twice daily as needed for pain",
+    "quantity": {
+      "value": 2,
+      "unit": "{tablet}"
+    },
+    "fulfillments": [
+      "http://smart-server/records/2169591/fulfillments/def",
+      "http://smart-server/records/2169591/fulfillments/ghi"
+    ]
+  }, {
+    "url": "http://smart-server/records/2169591/fulfillments/def",
+    "type": "Fulfillment", 
+    "medication": "http://smart-server/records/2169591/medications/123",
+    "patient": "http://smart-server/records/2169591",
+    "date": "2010-05-12T04:00:00Z",
+    "dispenseDaysSupply": 30,
+    "pbm": "T00000000001011",
+    "pharmacy": {
+      "ncpdpId": "5235235",
+      "address": {
+        "country": "Australia",
+        "locality": "WonderCity",
+        "postalCode": "5555",
+        "streetAddress": "111 Lake Drive"
       },
-      "provider": {
-        "deaNumber": "325555555",
-        "npiNumber": "5235235",
-        "name": {
-          "familyName": "Mandel",
-          "givenName": "Joshua"
-        }
-      },
-      "quantityDispensed": {
-        "value": 60,
-        "unit": "{tablet}"
+      "organizationName": "CVS #588"
+    },
+    "provider": {
+      "deaNumber": "325555555",
+      "npiNumber": "5235235",
+      "name": {
+        "familyName": "Mandel",
+        "givenName": "Joshua"
       }
+    },
+    "quantityDispensed": {
+      "value": 60,
+      "unit": "{tablet}"
     }
-  },
+  }, {
+    "url": "http://smart-server/records/2169591/fulfillments/ghi",
+    "type": "Fulfillment", 
+    "medication": "http://smart-server/records/2169591/medications/123",
+    "patient": "http://smart-server/records/2169591",
+    "date": "2010-05-12T04:00:00Z",
+    "dispenseDaysSupply": 30,
+    "pbm": "T00000000001011",
+    "pharmacy": {
+      "ncpdpId": "5235235",
+      "address": {
+        "country": "Australia",
+        "locality": "WonderCity",
+        "postalCode": "5555",
+        "streetAddress": "111 Lake Drive"
+      },
+      "organizationName": "CVS #588"
+    },
+    "provider": {
+      "deaNumber": "325555555",
+      "npiNumber": "5235235",
+      "name": {
+        "familyName": "Mandel",
+        "givenName": "Joshua"
+      }
+    },
+    "quantityDispensed": {
+      "value": 60,
+      "unit": "{tablet}"
+    }
+  }],
   "summary": {
     "processingTimeMs": 85,
-    "self": "http://smart-server/records/2169591/medications",
-    "index": {
-      "Medication": [
-        "http://smart-server/records/2169591/medications/789"
-      ],
-      "Fulfillment": [
-        "http://smart-server/records/2169591/fulfillments/def"
-      ]
-    }
+    "self": "http://smart-server/records/2169591/medications"
   }
 }
