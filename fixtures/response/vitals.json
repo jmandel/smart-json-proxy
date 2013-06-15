@@ -1,70 +1,2666 @@
 {
-  "data":  [{
-    "url": "http://smart-sever/records/123/vital_sign_sets/823523",
-    "type": "VitalSignSet",
-    "patient": "http://smart-sever/records/123",
-    "date": "2010-05-12T04:20:00Z",
-    "encounter": {
-      "url": "http://smart-sever/records/123/encounters/252352",
-      "type": "Encounter",
-      "patient": "http://smart-sever/records/123",
-      "encounterType": {
-        "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
-        "system": "http://smartplatforms.org/terms/codes/EncounterType#",
-        "identifier": "ambulatory",
-        "label": "Ambulatory encounter"
+  "data": [
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/000aa8a8-4144-4ee9-8c34-77e66e4fae56",
+      "type": "VitalSignSet",
+      "date": "2010-10-15T01:56:13.079849",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/398f0916-25ad-4a60-b96c-8dc83da5cc92",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-10-15T01:56:13.079849",
+        "startDate": "2010-10-15T01:56:13.079849"
       },
-      "endDate": "2010-05-12T04:20:00Z",
-      "startDate": "2010-05-12T04:00:00Z"
-    },
-    "bloodPressure": {
-      "bodyPosition": {
-        "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
-        "identifier": "33586001",
-        "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-        "label": "Sitting"
-      },
-      "bodySite": {
-        "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
-        "identifier": "368209003",
-        "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-        "label": "Right arm"
-      },
-      "diastolic": {
-        "unit": "mm[Hg]",
-        "value": 82,
+      "height": {
+        "unit": "cm",
+        "value": 110.054353315,
         "vitalName": {
-          "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "identifier": "8462-4",
-          "label": "Intravascular diastolic"
-        }
-      },
-      "systolic": {
-        "unit": "mm[Hg]",
-        "value": 132,
-        "vitalName": {
-          "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
-          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-          "identifier": "8480-6",
-          "label": "Intravascular systolic"
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
         }
       }
     },
-    "height": {
-      "unit": "cm",
-      "value": 180,
-      "vitalName": {
-        "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
-        "system": "http://purl.bioontology.org/ontology/SNOMEDCT/",
-        "identifier": "8302-2",
-        "label": "Body height"
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/00649300-d373-4844-bf50-a0e51216dc1b",
+      "type": "VitalSignSet",
+      "date": "2012-05-31T11:05:06.142480",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 71.6964361191,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 112,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/7a4aeb41-b33c-45ed-8e71-184c5c207218",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2012-05-31T11:05:06.142480",
+        "startDate": "2012-05-31T11:05:06.142480"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/043e709e-0716-4bb0-a84e-6e90e1e2af10",
+      "type": "VitalSignSet",
+      "date": "2011-07-28T06:19:43.812973",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/a0a5c910-3f4f-4e38-bff9-9b961eb080c8",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2011-07-28T06:19:43.812973",
+        "startDate": "2011-07-28T06:19:43.812973"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 114.381210621,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/0b0523ba-fa86-4219-a789-d4b7039cdd2a",
+      "type": "VitalSignSet",
+      "date": "2012-12-21T04:42:10.010227",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 65.3011400711,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 105.688882329,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/98e3a9f0-7fc8-418f-9349-ca58da8082ae",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2012-12-21T04:42:10.010227",
+        "startDate": "2012-12-21T04:42:10.010227"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/0ec2a1e9-9347-4462-b7e4-a6ce3517ae91",
+      "type": "VitalSignSet",
+      "date": "2012-03-29T11:30:57.222052",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 72.4790419296,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 112,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/8dab5a6b-0d3e-44c2-b14a-a05a5155aa2f",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2012-03-29T11:30:57.222052",
+        "startDate": "2012-03-29T11:30:57.222052"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/17a02896-4fc4-48f7-9830-eca04dfbbd40",
+      "type": "VitalSignSet",
+      "date": "2013-01-08T15:20:31.009795",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 63.8613125732,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 106.128096464,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/7c12ff78-7a31-4a0b-951d-acd6d0d0beee",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2013-01-08T15:20:31.009795",
+        "startDate": "2013-01-08T15:20:31.009795"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/1e5bd711-d0e6-4f08-9d81-a88fa66810ea",
+      "type": "VitalSignSet",
+      "date": "2011-12-23T15:34:14.795332",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 71.5903737026,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 113,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/10ce532a-5d30-417c-9b0d-fa285d4b07eb",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2011-12-23T15:34:14.795332",
+        "startDate": "2011-12-23T15:34:14.795332"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/236ece10-2a50-4c19-8a37-7ba1e285ef9b",
+      "type": "VitalSignSet",
+      "date": "2010-06-07T00:45:03.019351",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/7c1853a1-7c00-4954-9186-86a24a97268e",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-06-07T00:45:03.019351",
+        "startDate": "2010-06-07T00:45:03.019351"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 107.258308339,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/2ccc51d5-acd1-44eb-9551-55d299a006f3",
+      "type": "VitalSignSet",
+      "date": "2010-02-01T06:09:45.300374",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 54.928368774,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 99.2561477116,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/8273455d-856e-42f4-84db-856daee202fc",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-02-01T06:09:45.300374",
+        "startDate": "2010-02-01T06:09:45.300374"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/31bcf07a-6610-439c-a70e-5b332e8b90ca",
+      "type": "VitalSignSet",
+      "date": "2008-04-29T12:16:00.144117",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/b622aa4a-d7f7-4406-bdee-1886e8ffb4a3",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-04-29T12:16:00.144117",
+        "startDate": "2008-04-29T12:16:00.144117"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 88.414030593,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/32aeb4c2-825c-46f0-9362-128bb2e097f1",
+      "type": "VitalSignSet",
+      "date": "2009-08-07T10:11:30.767136",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/61396006",
+          "label": "left thigh",
+          "identifier": "61396006",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 55.0843011829,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 98.4054164377,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/f5bc53d7-9b33-41f6-9cf6-01e2323cb85b",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2009-08-07T10:11:30.767136",
+        "startDate": "2009-08-07T10:11:30.767136"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/3310018e-06d0-4df5-a857-591579421628",
+      "type": "VitalSignSet",
+      "date": "2010-04-29T20:51:15.481026",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 56.6154011902,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 102.252454414,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/4e0a9753-0c4f-4c01-8769-96d82777438d",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-04-29T20:51:15.481026",
+        "startDate": "2010-04-29T20:51:15.481026"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/4650d159-463e-4c92-a458-a51a28b7c76c",
+      "type": "VitalSignSet",
+      "date": "2013-01-20T03:10:08.108699",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 64.8098038804,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 106.271867375,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/30f3e5ee-ea80-4ed5-b9af-e573fd3ebc6b",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2013-01-20T03:10:08.108699",
+        "startDate": "2013-01-20T03:10:08.108699"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/4691a80c-1489-472a-a48d-9a12df78a073",
+      "type": "VitalSignSet",
+      "date": "2008-08-05T07:40:53.374027",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 46.3550204237,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 91.0263135468,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/8adfc70e-4ef4-468b-ba95-4a248ebb5028",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-08-05T07:40:53.374027",
+        "startDate": "2008-08-05T07:40:53.374027"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/46f16c3e-b46c-4b00-a3d2-77c38b8628f2",
+      "type": "VitalSignSet",
+      "date": "2012-10-16T15:23:09.698641",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/8b548f98-17dd-4dea-ad62-c2baf3a7c39c",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2012-10-16T15:23:09.698641",
+        "startDate": "2012-10-16T15:23:09.698641"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 123.082412247,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/4ec09a18-63d3-402a-8b08-5ade287d2b2e",
+      "type": "VitalSignSet",
+      "date": "2008-06-18T21:20:04.320667",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/08510b3d-1658-40bd-97e6-8bd22579785a",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-06-18T21:20:04.320667",
+        "startDate": "2008-06-18T21:20:04.320667"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 89.5182021243,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/4f14db11-9eae-45b9-80cf-fa36a31973bf",
+      "type": "VitalSignSet",
+      "date": "2010-08-12T04:00:00Z",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bodyMassIndex": {
+        "unit": "kg/m2",
+        "value": 16.2,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/39156-5",
+          "label": "body mass index",
+          "identifier": "39156-5",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/b61e6323-5921-40d2-b403-6b8e7f66eddf",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-08-12T04:20:00Z",
+        "startDate": "2010-08-12T04:00:00Z"
+      },
+      "headCircumference": {
+        "unit": "cm",
+        "value": 51.2,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8287-5",
+          "label": "Head circumference",
+          "identifier": "8287-5",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      },
+      "heartRate": {
+        "unit": "{beats}/min",
+        "value": 90,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8867-4",
+          "label": "heart rate",
+          "identifier": "8867-4",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      },
+      "height": {
+        "unit": "cm",
+        "value": 119,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      },
+      "oxygenSaturation": {
+        "unit": "%{HemoglobinSaturation}",
+        "value": 99,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/2710-2",
+          "label": "oxygen saturation",
+          "identifier": "2710-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      },
+      "respiratoryRate": {
+        "unit": "{breaths}/min",
+        "value": 16,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/9279-1",
+          "label": "respiration rate",
+          "identifier": "9279-1",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      },
+      "temperature": {
+        "unit": "Cel",
+        "value": 37,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8310-5",
+          "label": "body temperature",
+          "identifier": "8310-5",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      },
+      "weight": {
+        "unit": "kg",
+        "value": 23,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/3141-9",
+          "label": "body weight",
+          "identifier": "3141-9",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/5a0b83b3-124d-4d04-9e24-494072d4623e",
+      "type": "VitalSignSet",
+      "date": "2012-11-19T03:37:44.689591",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/26dbffce-27aa-4bee-9f41-6e36494a59a8",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2012-11-19T03:37:44.689591",
+        "startDate": "2012-11-19T03:37:44.689591"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 123.449646517,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/5a8648f4-d638-4d2f-80be-cd50f70727fc",
+      "type": "VitalSignSet",
+      "date": "2010-01-15T19:33:55.408585",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 55.7112443676,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 101.190764845,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/86cae668-5fc2-45cd-a213-c0ad4dd9a88f",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-01-15T19:33:55.408585",
+        "startDate": "2010-01-15T19:33:55.408585"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/5adb0f95-f3f2-404d-b372-cc157893a9ea",
+      "type": "VitalSignSet",
+      "date": "2009-01-01T03:19:24.655952",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/27a9c594-fa95-4ebe-9cde-c605cdec6c6d",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2009-01-01T03:19:24.655952",
+        "startDate": "2009-01-01T03:19:24.655952"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 96.3646714439,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/5f16ef6b-e581-4853-97d6-b311a625cffd",
+      "type": "VitalSignSet",
+      "date": "2013-02-22T17:28:47.548273",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 63.714698527,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 104.693231143,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/566ad2f5-85b7-4088-bb62-13debf18bcec",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2013-02-22T17:28:47.548273",
+        "startDate": "2013-02-22T17:28:47.548273"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/69e098b3-b723-422e-aefe-e31eb24d6610",
+      "type": "VitalSignSet",
+      "date": "2010-03-30T09:45:46.870523",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 56.5394774873,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 101.450540394,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/b805c456-7b64-4b6a-a806-9b2e3f0567b8",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-03-30T09:45:46.870523",
+        "startDate": "2010-03-30T09:45:46.870523"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/71354e8b-8177-499b-ad89-b6192ab01e0c",
+      "type": "VitalSignSet",
+      "date": "2010-05-10T00:38:54.860919",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 57.9502090626,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 102.084669638,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/ec622137-e4e5-4f1a-aab3-9ba1fbe08e26",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-05-10T00:38:54.860919",
+        "startDate": "2010-05-10T00:38:54.860919"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/75b823ed-2cf5-49cd-8be0-c662cb5dd5d7",
+      "type": "VitalSignSet",
+      "date": "2010-08-28T01:30:28.751031",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/cf701715-794d-4873-93f5-563c5c71e925",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-08-28T01:30:28.751031",
+        "startDate": "2010-08-28T01:30:28.751031"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 109.056260072,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/79532670-e43b-44d8-8804-b0b76b397b28",
+      "type": "VitalSignSet",
+      "date": "2009-03-26T07:00:23.507639",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 48.9011865601,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 98.4001515395,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/4fa7bb72-5a74-40b3-94dc-b102c52fcbc3",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2009-03-26T07:00:23.507639",
+        "startDate": "2009-03-26T07:00:23.507639"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/7d0ccab1-3a9b-428b-b327-7998f8a5d924",
+      "type": "VitalSignSet",
+      "date": "2008-11-18T18:50:34.163731",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 46.504887946,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 93.447976029,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/0dfa64f6-03da-4c43-bf78-b6bce3ce6aba",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-11-18T18:50:34.163731",
+        "startDate": "2008-11-18T18:50:34.163731"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/7f235892-92cb-4453-bb5a-363d9f03e363",
+      "type": "VitalSignSet",
+      "date": "2009-02-18T06:36:20.380656",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 49.9295726573,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 95.0735322952,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/dc3f27fe-5460-4f26-b3b5-1c04328d2dfc",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2009-02-18T06:36:20.380656",
+        "startDate": "2009-02-18T06:36:20.380656"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/80038cc3-497b-4574-865a-5f0cec42a8a4",
+      "type": "VitalSignSet",
+      "date": "2009-06-12T02:02:13.316026",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/61396006",
+          "label": "left thigh",
+          "identifier": "61396006",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 50.1635022566,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 97.9886617015,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/0c446a65-cbdb-40c6-b66c-a228329abd5f",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2009-06-12T02:02:13.316026",
+        "startDate": "2009-06-12T02:02:13.316026"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/82ae7b85-06ed-4170-a978-896c95af8867",
+      "type": "VitalSignSet",
+      "date": "2010-09-26T16:52:22.591095",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 59.6471481895,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 103.137096393,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/9c93ef9f-7444-471e-a261-5b51ddc8cea5",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-09-26T16:52:22.591095",
+        "startDate": "2010-09-26T16:52:22.591095"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/87013321-7314-49c7-8597-d8bf82365650",
+      "type": "VitalSignSet",
+      "date": "2010-11-11T00:46:58.076471",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 62.902417974,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 104.380098959,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/428d4954-f315-444c-89aa-14cbd48302f5",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-11-11T00:46:58.076471",
+        "startDate": "2010-11-11T00:46:58.076471"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/9213c367-e2f7-44ba-a664-51a3ca3935a6",
+      "type": "VitalSignSet",
+      "date": "2010-01-15T13:35:37.514900",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 55.1507460761,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 101.871068659,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/ee4bff16-68a4-42ce-a561-c9a1d2e2bd14",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-01-15T13:35:37.514900",
+        "startDate": "2010-01-15T13:35:37.514900"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/991b6066-9b7f-4a82-b579-b75b0c627a30",
+      "type": "VitalSignSet",
+      "date": "2012-10-30T03:58:52.108428",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/69663910-1bc6-409e-a504-c012ade71692",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2012-10-30T03:58:52.108428",
+        "startDate": "2012-10-30T03:58:52.108428"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 123.230629194,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/9af0a29b-ec18-4012-9ab5-e31403f7056f",
+      "type": "VitalSignSet",
+      "date": "2011-09-14T21:01:32.131927",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 71.5046244545,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 110.452540629,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/f63ae121-9b02-43b5-a79a-ecb49adc5414",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2011-09-14T21:01:32.131927",
+        "startDate": "2011-09-14T21:01:32.131927"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/9e57d751-988d-4d4a-96ac-17ada00ff18b",
+      "type": "VitalSignSet",
+      "date": "2008-06-13T00:36:53.878165",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 44.6951725274,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 91.4637135532,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/2c1c046d-f914-47e3-adc4-f402b49619e7",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-06-13T00:36:53.878165",
+        "startDate": "2008-06-13T00:36:53.878165"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/9f39bd14-2d05-4dbd-b5e3-7ba17ae50b1f",
+      "type": "VitalSignSet",
+      "date": "2008-10-30T16:08:28.273183",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 46.1552332678,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 93.3138631613,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/e084fba5-3fba-4567-a9e1-4abd4af4f760",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-10-30T16:08:28.273183",
+        "startDate": "2008-10-30T16:08:28.273183"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/a6223863-83a1-473e-8af0-4f5ef778c3b1",
+      "type": "VitalSignSet",
+      "date": "2009-09-28T17:14:04.349136",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 52.8042470458,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 98.3346171009,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/f7e79ecd-ed0c-4578-b2ac-1d8c68757fad",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2009-09-28T17:14:04.349136",
+        "startDate": "2009-09-28T17:14:04.349136"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/aaf954b1-ca7a-41d3-8d10-f6e0a85ee2d1",
+      "type": "VitalSignSet",
+      "date": "2011-10-24T15:18:23.191151",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 70.9703805389,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 113,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/92d76129-de51-49bb-afed-0a489edadbb0",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2011-10-24T15:18:23.191151",
+        "startDate": "2011-10-24T15:18:23.191151"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/abdb202d-ef76-4428-9b9f-12795193bc2e",
+      "type": "VitalSignSet",
+      "date": "2012-12-02T03:54:50.528975",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/3dfec201-4b0a-45b6-a1e3-aaf4919a1ba0",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2012-12-02T03:54:50.528975",
+        "startDate": "2012-12-02T03:54:50.528975"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 123.592242387,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/b4edd557-76cc-437d-b3cd-a0fc786a613a",
+      "type": "VitalSignSet",
+      "date": "2010-12-03T21:19:13.037843",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 62.8448313048,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 103.363264384,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/ec612df1-3835-4e9c-9980-0b9878a76011",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-12-03T21:19:13.037843",
+        "startDate": "2010-12-03T21:19:13.037843"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/b933f9eb-00dd-411a-8e15-158838267a1a",
+      "type": "VitalSignSet",
+      "date": "2011-11-16T06:18:13.603959",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 71.9563221214,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 113,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/344c93e9-1e6d-4f19-b941-8ac6fb367767",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2011-11-16T06:18:13.603959",
+        "startDate": "2011-11-16T06:18:13.603959"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/b9345db3-a12a-447c-812a-13413d456c32",
+      "type": "VitalSignSet",
+      "date": "2008-09-08T19:56:30.763203",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 47.0745751321,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 91.3113927615,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/ddd6ed26-5f08-4160-98d2-73e8f9e32c54",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-09-08T19:56:30.763203",
+        "startDate": "2008-09-08T19:56:30.763203"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/bff18745-ea15-45d2-9872-d1e35305f7c6",
+      "type": "VitalSignSet",
+      "date": "2010-06-14T17:01:23.036668",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 58.8614345545,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 103.489069019,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/d160db11-cbaa-43a6-9c81-fa90e0468178",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-06-14T17:01:23.036668",
+        "startDate": "2010-06-14T17:01:23.036668"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/c1c20d25-9b4c-4065-aa75-a9cdf92f958e",
+      "type": "VitalSignSet",
+      "date": "2010-01-01T14:42:44.201452",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 53.7497731082,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 101.798171543,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/af844022-3cbe-47b1-a508-d5759558d4ca",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-01-01T14:42:44.201452",
+        "startDate": "2010-01-01T14:42:44.201452"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/c9ba7860-14c3-405b-b260-f505eae51412",
+      "type": "VitalSignSet",
+      "date": "2011-11-11T06:27:05.846619",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/4c4485ed-8041-4c5c-ad5f-356f8a7664ab",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2011-11-11T06:27:05.846619",
+        "startDate": "2011-11-11T06:27:05.846619"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 116.704610426,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/cfe6bd21-92ea-41c8-938f-40e012641c6c",
+      "type": "VitalSignSet",
+      "date": "2008-11-30T05:44:29.401565",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/61396006",
+          "label": "left thigh",
+          "identifier": "61396006",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 46.4817351893,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 94.1724542757,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/da5ca7c7-b802-4e12-88c4-2ae51a30a6b9",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#inpatient",
+          "label": "inpatient encounter",
+          "identifier": "inpatient",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-11-30T05:44:29.401565",
+        "startDate": "2008-11-30T05:44:29.401565"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/db2bad7b-cbcb-4649-b85c-2f9f8bbca3b3",
+      "type": "VitalSignSet",
+      "date": "2010-10-07T07:20:39.452663",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 61.2479993018,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 104.677727487,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/9dfe16ed-5059-461d-b9f0-0318455f58b5",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-10-07T07:20:39.452663",
+        "startDate": "2010-10-07T07:20:39.452663"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/dd0088f8-4c51-4803-8713-18869da73b9a",
+      "type": "VitalSignSet",
+      "date": "2008-08-20T12:00:36.609157",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 47.6747369031,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 91.4154748504,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/273c0dbc-7eda-4529-9935-53323962b11b",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-08-20T12:00:36.609157",
+        "startDate": "2008-08-20T12:00:36.609157"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/e1e2cd32-83cb-4a53-919a-bce574b191c1",
+      "type": "VitalSignSet",
+      "date": "2010-06-05T21:40:35.727657",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/085bfe90-ac57-4696-b9af-f0470233ac8b",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-06-05T21:40:35.727657",
+        "startDate": "2010-06-05T21:40:35.727657"
+      },
+      "height": {
+        "unit": "cm",
+        "value": 107.233582999,
+        "vitalName": {
+          "url": "http://purl.bioontology.org/ontology/LNC/8302-2",
+          "label": "body height",
+          "identifier": "8302-2",
+          "system": "http://purl.bioontology.org/ontology/LNC/"
+        }
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/e710dc41-9aa3-4681-a1a5-37373645f204",
+      "type": "VitalSignSet",
+      "date": "2013-03-26T10:59:55.701646",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 63.0853530079,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#auscultation",
+          "label": "auscultation",
+          "identifier": "auscultation",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 104.054949538,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/3047d3a4-d68e-401d-9645-4c0846607099",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2013-03-26T10:59:55.701646",
+        "startDate": "2013-03-26T10:59:55.701646"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/eea695c2-786a-4d60-88c8-6625d2a32eb8",
+      "type": "VitalSignSet",
+      "date": "2008-05-07T17:09:35.925627",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 39.413349074,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 90.7223286301,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/ee6a4f82-501f-48a6-adcb-7894677b37e7",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2008-05-07T17:09:35.925627",
+        "startDate": "2008-05-07T17:09:35.925627"
+      }
+    },
+    {
+      "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/vital_sign_sets/fbd37956-d145-4c44-8096-2bd2984ffd81",
+      "type": "VitalSignSet",
+      "date": "2010-10-12T03:22:33.751894",
+      "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+      "bloodPressure": {
+        "bodyPosition": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/33586001",
+          "label": "sitting",
+          "identifier": "33586001",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "bodySite": {
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/368209003",
+          "label": "right arm",
+          "identifier": "368209003",
+          "system": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        },
+        "diastolic": {
+          "unit": "mm[Hg]",
+          "value": 61.2537518947,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8462-4",
+            "label": "diastolic blood pressure",
+            "identifier": "8462-4",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        },
+        "method": {
+          "url": "http://smartplatforms.org/terms/codes/BloodPressureMethod#machine",
+          "label": "machine",
+          "identifier": "machine",
+          "system": "http://smartplatforms.org/terms/codes/BloodPressureMethod#"
+        },
+        "systolic": {
+          "unit": "mm[Hg]",
+          "value": 103.459098575,
+          "vitalName": {
+            "url": "http://purl.bioontology.org/ontology/LNC/8480-6",
+            "label": "systolic blood pressure",
+            "identifier": "8480-6",
+            "system": "http://purl.bioontology.org/ontology/LNC/"
+          }
+        }
+      },
+      "encounter": {
+        "url": "http://sandbox-api-v06.smartplatforms.org/records/99912345/encounters/bf2a1603-a90b-441d-a4e6-29f185140327",
+        "type": "Encounter",
+        "patient": "http://sandbox-api-v06.smartplatforms.org/records/99912345",
+        "encounterType": {
+          "url": "http://smartplatforms.org/terms/codes/EncounterType#ambulatory",
+          "label": "ambulatory encounter",
+          "identifier": "ambulatory",
+          "system": "http://smartplatforms.org/terms/codes/EncounterType#"
+        },
+        "endDate": "2010-10-12T03:22:33.751894",
+        "startDate": "2010-10-12T03:22:33.751894"
       }
     }
-  }],
+  ],
   "summary": {
-    "type": "Response",
-    "processingTimeMs": 120,
-    "url": "http://smart-sever/records/123/vital_sign_sets"
+    "processingTimeMs": 256
   }
 }

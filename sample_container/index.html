@@ -36,7 +36,17 @@
         // Get the content, then process it into SMART RDF/XML
         if (api_call.method=="GET" && fixture !== null){
           fixture.success(process);
+        } else if (api_call.func.match(/^\/manifest$/)){
+          callback_success({
+            contentType: "application/json",
+            data: JSON.stringify(container_manifest)
+          });
+
           } else {
+          callback_success({
+            contentType: "application/rdf+xml",
+            data: emptyRDF
+          })
           alert("Function " + api_call.func + " not implemented yet.");
         }
 
@@ -115,24 +125,59 @@
         "icon" :  "http://sample-apps-v06.smartplatforms.org/framework/bp_centiles/icon.png"
       };
 
-      var med_list_manifest = {
-        "name" : "Med List",
-        "description" : "Display medications in a table or timeline view",
-        "id" : "med-list@apps.smartplatforms.org",
+      var growth_chart_manifest = {
+        "name" : "Growth Charts",
+        "description" : "Pediatric growth charts",
+        "id" : "growth-charts@apps.smartplatforms.org",
         "mode" : "ui",	
         "scope": "record",
-        "icon" : "http://sample-apps-v06.smartplatforms.org/framework/med_list/icon.png",
-        "index": "http://sample-apps-v06.smartplatforms.org/framework/med_list/index.html",
+        "icon" : "http://sample-apps-v06.smartplatforms.org/framework/growth_chart/icon.png",
+        "index": "http://sample-apps-v06.smartplatforms.org/framework/growth_charts/index.html",
       }
 
       /* Event handler for the UI buttons in our sample container */
       var launch_app = function(manifest) {
         SMART.launch_app(manifest, sample_context);
       };
+
+      var container_manifest = {
+    "admin": "support@smartplatforms.org", 
+    "api_base": "http://sandbox-api-v06.smartplatforms.org", 
+    "capabilities": {
+        "http://smartplatforms.org/terms#Demographics": {
+            "methods": [
+                "GET"
+            ]
+        }, 
+        "http://smartplatforms.org/terms#Encounter": {
+            "methods": [
+                "GET"
+            ]
+        }, 
+        "http://smartplatforms.org/terms#VitalSignSet": {
+            "methods": [
+                "GET"
+            ]
+        }
+    }, 
+    "description": "Public sandbox to demonstrate the SMART API", 
+    "name": "SMART v0.6.1 Sandbox", 
+    "smart_version": "0.6.1"
+};
+
+var emptyRDF ='<?xml version="1.0" encoding="UTF-8"?>\n\
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"\n\
+   xmlns:api="http://smartplatforms.org/terms/api#"\n\
+   xmlns:dcterms="http://purl.org/dc/terms/"\n\
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"\n\
+   xmlns:sp="http://smartplatforms.org/terms#"\n\
+   xmlns:vcard="http://www.w3.org/2006/vcard/ns#"></rdf:RDF>';
+
+
     </script>
     <div id="app_selector">
       <input type="submit" value="BP Centiles" onclick="launch_app(bp_centiles_manifest)"/>
-      <input type="submit" value="Med List" onclick="launch_app(med_list_manifest)"/>
+      <input type="submit" value="Growth Charts" onclick="launch_app(growth_chart_manifest)"/>
     </div>
   </body>
 </html>
