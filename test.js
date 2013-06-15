@@ -5,9 +5,14 @@ var config = require('./config')
 , fs = require('fs');
 
 if (argv.data) {
+
+  if (argv.to === "application/json" && !argv.type){
+    throw "need a type (e.g. 'Medication') arg to frame content";
+  }
   convert({
     from: argv.from || "application/json",
     to: argv.to || "application/rdf+xml",
+    type: argv.type,
     body: fs.readFileSync(argv.data).toString()
   }, function(err, converted){
     console.log(converted || "none");

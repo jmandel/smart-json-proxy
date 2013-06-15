@@ -44,12 +44,13 @@ app.get('/records/:rId/vital_sign_sets*', function(req, res, next){
 // then converted 
 //   * from their native Content-type 
 //   * to an Acceptable MIME type.
-app.post('/convert', function(req, res, next){
+app.post('/convert/?:rootType?', function(req, res, next){
   var target = getTarget(req);
   convert({
     from: getSource(req),
     to: target,
-    body: req.rawBody
+    body: req.rawBody,
+    type: req.params.rootType
   }, function(err, converted){
     res.header('content-type', target);
     res.end(converted || 'none');

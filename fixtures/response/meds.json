@@ -24,6 +24,81 @@
       "http://smart-server/records/2169591/fulfillments/def",
       "http://smart-server/records/2169591/fulfillments/ghi"
     ]
+  },{
+    "url": "http://smart-server/records/2169591/medications/223",
+    "type": "Medication",
+    "patient": "http://smart-server/records/2169591",
+    "drugName": {
+      "label": "Amitriptyline HCl 50 mg tab",
+      "url": "http://purl.bioontology.org/ontology/RXNORM/856845",
+      "system": "RxNorm",
+      "identifier": "856845"
+    },
+    "startDate": "2007-03-14",
+    "endDate": "2007-08-14",
+    "frequency": {
+      "value": 2,
+      "unit": "/d"
+    },
+    "instructions": "Take two tablets twice daily as needed for pain",
+    "quantity": {
+      "value": 2,
+      "unit": "{tablet}"
+    },
+    "fulfillment": [
+      "http://smart-server/records/2169591/fulfillments/def",
+      "http://smart-server/records/2169591/fulfillments/ghi"
+    ]
+  },{
+    "url": "http://smart-server/records/2169591/medications/323",
+    "type": "Medication",
+    "patient": "http://smart-server/records/2169591",
+    "drugName": {
+      "label": "Amitriptyline HCl 50 mg tab",
+      "url": "http://purl.bioontology.org/ontology/RXNORM/856845",
+      "system": "RxNorm",
+      "identifier": "856845"
+    },
+    "startDate": "2007-03-14",
+    "endDate": "2007-08-14",
+    "frequency": {
+      "value": 2,
+      "unit": "/d"
+    },
+    "instructions": "Take two tablets twice daily as needed for pain",
+    "quantity": {
+      "value": 2,
+      "unit": "{tablet}"
+    },
+    "fulfillment": [
+      "http://smart-server/records/2169591/fulfillments/def",
+      "http://smart-server/records/2169591/fulfillments/ghi"
+    ]
+  },{
+    "url": "http://smart-server/records/2169591/medications/423",
+    "type": "Medication",
+    "patient": "http://smart-server/records/2169591",
+    "drugName": {
+      "label": "Amitriptyline HCl 50 mg tab",
+      "url": "http://purl.bioontology.org/ontology/RXNORM/856845",
+      "system": "RxNorm",
+      "identifier": "856845"
+    },
+    "startDate": "2007-03-14",
+    "endDate": "2007-08-14",
+    "frequency": {
+      "value": 2,
+      "unit": "/d"
+    },
+    "instructions": "Take two tablets twice daily as needed for pain",
+    "quantity": {
+      "value": 2,
+      "unit": "{tablet}"
+    },
+    "fulfillment": [
+      "http://smart-server/records/2169591/fulfillments/def",
+      "http://smart-server/records/2169591/fulfillments/ghi"
+    ]
   }, {
     "url": "http://smart-server/records/2169591/fulfillments/def",
     "type": "Fulfillment",

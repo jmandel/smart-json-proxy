@@ -1,135 +1,506 @@
+[ { url: 'http://smart-server/records/2169591/medications/123',
+    type: 'Medication',
+    patient: 'http://smart-server/records/2169591',
+    drugName: 
+     { label: 'Amitriptyline HCl 50 mg tab',
+       url: 'http://purl.bioontology.org/ontology/RXNORM/856845',
+       system: 'RxNorm',
+       identifier: '856845' },
+    startDate: '2007-03-14',
+    endDate: '2007-08-14',
+    frequency: { value: 2, unit: '/d' },
+    instructions: 'Take two tablets twice daily as needed for pain',
+    quantity: { value: 2, unit: '{tablet}' },
+    fulfillment: 
+     [ 'http://smart-server/records/2169591/fulfillments/def',
+       'http://smart-server/records/2169591/fulfillments/ghi' ] },
+  { url: 'http://smart-server/records/2169591/fulfillments/def',
+    type: 'Fulfillment',
+    medication: 'http://smart-server/records/2169591/medications/123',
+    patient: 'http://smart-server/records/2169591',
+    date: '2010-05-12T04:00:00Z',
+    dispenseDaysSupply: 30,
+    pbm: 'T00000000001011',
+    pharmacy: 
+     { ncpdpId: '5235235',
+       address: [Object],
+       organizationName: 'CVS #588' },
+    provider: { deaNumber: '325555555', npiNumber: '5235235', name: [Object] },
+    quantityDispensed: { value: 60, unit: '{tablet}' } },
+  { url: 'http://smart-server/records/2169591/fulfillments/ghi',
+    type: 'Fulfillment',
+    medication: 'http://smart-server/records/2169591/medications/123',
+    patient: 'http://smart-server/records/2169591',
+    date: '2010-05-12T04:00:00Z',
+    dispenseDaysSupply: 30,
+    pbm: 'T00000000001011',
+    pharmacy: 
+     { ncpdpId: '5235235',
+       address: [Object],
+       organizationName: 'CVS #588' },
+    provider: { deaNumber: '325555555', npiNumber: '5235235', name: [Object] },
+    quantityDispensed: { value: 60, unit: '{tablet}' } } ]
+{
+  "@context": {
+    "@vocab": "http://smartplatforms.org/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sp": "http://smartplatforms.org/terms#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "v": "http://www.w3.org/2006/vcard/ns#",
+    "identifier": "dcterms:identifier",
+    "label": "dcterms:title",
+    "url": "@id",
+    "type": "@type",
+    "patient": {
+      "@id": "belongsTo",
+      "@type": "@id"
+    },
+    "hasStatement": {
+      "@type": "@id"
+    },
+    "date": "dcterms:date",
+    "additionalName": {
+      "@id": "v:additional-name",
+      "@container": "@set"
+    },
+    "familyName": "v:family-name",
+    "phone": "v:tel",
+    "Cell": "v:Cell",
+    "Pref": "v:Pref",
+    "Home": "v:Home",
+    "Work": "v:Work",
+    "Fulfillment": {
+      "@type": "@id"
+    },
+    "name": "v:n",
+    "email": "v:email",
+    "birthdate": "v:bday",
+    "deathdate": "v:deathdate",
+    "givenName": "v:given-name",
+    "address": "v:adr",
+    "streetAddress": "v:street-address",
+    "extendedAddress": "v:extended-address",
+    "region": "v:region",
+    "postalCode": "v:postal-code",
+    "country": "v:country",
+    "locality": "v:locality",
+    "Medication": {
+      "@type": "@id"
+    },
+    "medication": {
+      "@type": "@id"
+    },
+    "fulfillment": {
+      "@type": "@id",
+      "@contianer": "@set"
+    },
+    "encounter": {
+      "@type": "@id"
+    },
+    "self": {
+      "@type": "@id"
+    },
+    "gender": "foaf:gender",
+    "medicalRecordNumber": {
+      "@container": "@set"
+    }
+  },
+  "@graph": [
+    {
+      "url": "http://smart-server/records/2169591/medications/123",
+      "type": "Medication",
+      "patient": "http://smart-server/records/2169591",
+      "drugName": {
+        "label": "Amitriptyline HCl 50 mg tab",
+        "type": [
+          "CodedValue"
+        ],
+        "code": {
+          "url": "http://purl.bioontology.org/ontology/RXNORM/856845",
+          "identifier": "856845",
+          "system": "RxNorm",
+          "label": "Amitriptyline HCl 50 mg tab",
+          "type": [
+            "Code"
+          ]
+        }
+      },
+      "startDate": "2007-03-14",
+      "endDate": "2007-08-14",
+      "frequency": {
+        "value": 2,
+        "unit": "/d",
+        "type": [
+          "ValueAndUnit"
+        ]
+      },
+      "instructions": "Take two tablets twice daily as needed for pain",
+      "quantity": {
+        "value": 2,
+        "unit": "{tablet}",
+        "type": [
+          "ValueAndUnit"
+        ]
+      },
+      "fulfillment": [
+        "http://smart-server/records/2169591/fulfillments/def",
+        "http://smart-server/records/2169591/fulfillments/ghi"
+      ]
+    },
+    {
+      "url": "http://smart-server/records/2169591/fulfillments/def",
+      "type": "Fulfillment",
+      "medication": "http://smart-server/records/2169591/medications/123",
+      "patient": "http://smart-server/records/2169591",
+      "date": "2010-05-12T04:00:00Z",
+      "dispenseDaysSupply": 30,
+      "pbm": "T00000000001011",
+      "pharmacy": {
+        "ncpdpId": "5235235",
+        "address": {
+          "country": "Australia",
+          "locality": "WonderCity",
+          "postalCode": "5555",
+          "streetAddress": "111 Lake Drive",
+          "type": [
+            "v:Address"
+          ]
+        },
+        "organizationName": "CVS #588",
+        "type": [
+          "Pharmacy"
+        ]
+      },
+      "provider": {
+        "deaNumber": "325555555",
+        "npiNumber": "5235235",
+        "name": {
+          "familyName": "Mandel",
+          "givenName": "Joshua",
+          "type": [
+            "v:Name"
+          ]
+        },
+        "type": [
+          "Provider"
+        ]
+      },
+      "quantityDispensed": {
+        "value": 60,
+        "unit": "{tablet}",
+        "type": [
+          "ValueAndUnit"
+        ]
+      }
+    },
+    {
+      "url": "http://smart-server/records/2169591/fulfillments/ghi",
+      "type": "Fulfillment",
+      "medication": "http://smart-server/records/2169591/medications/123",
+      "patient": "http://smart-server/records/2169591",
+      "date": "2010-05-12T04:00:00Z",
+      "dispenseDaysSupply": 30,
+      "pbm": "T00000000001011",
+      "pharmacy": {
+        "ncpdpId": "5235235",
+        "address": {
+          "country": "Australia",
+          "locality": "WonderCity",
+          "postalCode": "5555",
+          "streetAddress": "111 Lake Drive",
+          "type": [
+            "v:Address"
+          ]
+        },
+        "organizationName": "CVS #588",
+        "type": [
+          "Pharmacy"
+        ]
+      },
+      "provider": {
+        "deaNumber": "325555555",
+        "npiNumber": "5235235",
+        "name": {
+          "familyName": "Mandel",
+          "givenName": "Joshua",
+          "type": [
+            "v:Name"
+          ]
+        },
+        "type": [
+          "Provider"
+        ]
+      },
+      "quantityDispensed": {
+        "value": 60,
+        "unit": "{tablet}",
+        "type": [
+          "ValueAndUnit"
+        ]
+      }
+    }
+  ]
+}
+[ { url: 'http://smart-server/records/2169591/medications/123',
+    type: 'Medication',
+    patient: 'http://smart-server/records/2169591',
+    drugName: 
+     { label: 'Amitriptyline HCl 50 mg tab',
+       type: [Object],
+       code: [Object] },
+    startDate: '2007-03-14',
+    endDate: '2007-08-14',
+    frequency: { value: 2, unit: '/d', type: [Object] },
+    instructions: 'Take two tablets twice daily as needed for pain',
+    quantity: { value: 2, unit: '{tablet}', type: [Object] },
+    fulfillment: 
+     [ 'http://smart-server/records/2169591/fulfillments/def',
+       'http://smart-server/records/2169591/fulfillments/ghi' ] },
+  { url: 'http://smart-server/records/2169591/fulfillments/def',
+    type: 'Fulfillment',
+    medication: 'http://smart-server/records/2169591/medications/123',
+    patient: 'http://smart-server/records/2169591',
+    date: '2010-05-12T04:00:00Z',
+    dispenseDaysSupply: 30,
+    pbm: 'T00000000001011',
+    pharmacy: 
+     { ncpdpId: '5235235',
+       address: [Object],
+       organizationName: 'CVS #588',
+       type: [Object] },
+    provider: 
+     { deaNumber: '325555555',
+       npiNumber: '5235235',
+       name: [Object],
+       type: [Object] },
+    quantityDispensed: { value: 60, unit: '{tablet}', type: [Object] } },
+  { url: 'http://smart-server/records/2169591/fulfillments/ghi',
+    type: 'Fulfillment',
+    medication: 'http://smart-server/records/2169591/medications/123',
+    patient: 'http://smart-server/records/2169591',
+    date: '2010-05-12T04:00:00Z',
+    dispenseDaysSupply: 30,
+    pbm: 'T00000000001011',
+    pharmacy: 
+     { ncpdpId: '5235235',
+       address: [Object],
+       organizationName: 'CVS #588',
+       type: [Object] },
+    provider: 
+     { deaNumber: '325555555',
+       npiNumber: '5235235',
+       name: [Object],
+       type: [Object] },
+    quantityDispensed: { value: 60, unit: '{tablet}', type: [Object] } } ]
+null { '@default': 
+   [ { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] },
+     { subject: [Object], predicate: [Object], object: [Object] } ] }
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:foaf="http://xmlns.com/foaf/0.1/"
 xmlns:v="http://www.w3.org/2006/vcard/ns#"
 xmlns:sp="http://smartplatforms.org/terms#"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nodeID="b0">
-   <sp:processingTimeMs>85</sp:processingTimeMs>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b0">
-   <sp:self rdf:resource="http://smart-server/records/2169591/medications" /></rdf:Description>
-<rdf:Description rdf:nodeID="b1">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#CodedValue" /></rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b0">
    <dcterms:title>Amitriptyline HCl 50 mg tab</dcterms:title>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b0">
    <sp:code rdf:resource="http://purl.bioontology.org/ontology/RXNORM/856845" /></rdf:Description>
-<rdf:Description rdf:nodeID="b10">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Address" /></rdf:Description>
-<rdf:Description rdf:nodeID="b10">
-   <v:country>Australia</v:country>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b10">
-   <v:locality>WonderCity</v:locality>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b10">
-   <v:postal-code>5555</v:postal-code>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b10">
-   <v:street-address>111 Lake Drive</v:street-address>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b11">
-   <rdf:type rdf:resource="http://smartplatforms.org/terms#Provider" /></rdf:Description>
-<rdf:Description rdf:nodeID="b11">
-   <sp:deaNumber>325555555</sp:deaNumber>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b11">
-   <sp:npiNumber>5235235</sp:npiNumber>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b11">
-   <v:n rdf:nodeID="b12" /></rdf:Description>
-<rdf:Description rdf:nodeID="b12">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Name" /></rdf:Description>
-<rdf:Description rdf:nodeID="b12">
-   <v:family-name>Mandel</v:family-name>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b12">
-   <v:given-name>Joshua</v:given-name>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b13">
+<rdf:Description rdf:nodeID="b1">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#ValueAndUnit" /></rdf:Description>
-<rdf:Description rdf:nodeID="b13">
-   <sp:unit>{tablet}</sp:unit>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b13">
-   <sp:value>60</sp:value>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b2">
-   <rdf:type rdf:resource="http://smartplatforms.org/terms#ValueAndUnit" /></rdf:Description>
-<rdf:Description rdf:nodeID="b2">
+<rdf:Description rdf:nodeID="b1">
    <sp:unit>/d</sp:unit>
 </rdf:Description>
+<rdf:Description rdf:nodeID="b1">
+   <sp:value>2</sp:value>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b10">
+   <rdf:type rdf:resource="http://smartplatforms.org/terms#Provider" /></rdf:Description>
+<rdf:Description rdf:nodeID="b10">
+   <sp:deaNumber>325555555</sp:deaNumber>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b10">
+   <sp:npiNumber>5235235</sp:npiNumber>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b10">
+   <v:n rdf:nodeID="b11" /></rdf:Description>
+<rdf:Description rdf:nodeID="b11">
+   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Name" /></rdf:Description>
+<rdf:Description rdf:nodeID="b11">
+   <v:family-name>Mandel</v:family-name>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b11">
+   <v:given-name>Joshua</v:given-name>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b12">
+   <rdf:type rdf:resource="http://smartplatforms.org/terms#ValueAndUnit" /></rdf:Description>
+<rdf:Description rdf:nodeID="b12">
+   <sp:unit>{tablet}</sp:unit>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b12">
+   <sp:value>60</sp:value>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b2">
+   <rdf:type rdf:resource="http://smartplatforms.org/terms#ValueAndUnit" /></rdf:Description>
+<rdf:Description rdf:nodeID="b2">
+   <sp:unit>{tablet}</sp:unit>
+</rdf:Description>
 <rdf:Description rdf:nodeID="b2">
    <sp:value>2</sp:value>
 </rdf:Description>
 <rdf:Description rdf:nodeID="b3">
-   <rdf:type rdf:resource="http://smartplatforms.org/terms#ValueAndUnit" /></rdf:Description>
-<rdf:Description rdf:nodeID="b3">
-   <sp:unit>{tablet}</sp:unit>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b3">
-   <sp:value>2</sp:value>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b4">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Pharmacy" /></rdf:Description>
-<rdf:Description rdf:nodeID="b4">
+<rdf:Description rdf:nodeID="b3">
    <sp:ncpdpId>5235235</sp:ncpdpId>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b4">
+<rdf:Description rdf:nodeID="b3">
    <sp:organizationName>CVS #588</sp:organizationName>
 </rdf:Description>
+<rdf:Description rdf:nodeID="b3">
+   <v:adr rdf:nodeID="b4" /></rdf:Description>
 <rdf:Description rdf:nodeID="b4">
-   <v:adr rdf:nodeID="b5" /></rdf:Description>
-<rdf:Description rdf:nodeID="b5">
    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Address" /></rdf:Description>
-<rdf:Description rdf:nodeID="b5">
+<rdf:Description rdf:nodeID="b4">
    <v:country>Australia</v:country>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b5">
+<rdf:Description rdf:nodeID="b4">
    <v:locality>WonderCity</v:locality>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b5">
+<rdf:Description rdf:nodeID="b4">
    <v:postal-code>5555</v:postal-code>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b5">
+<rdf:Description rdf:nodeID="b4">
    <v:street-address>111 Lake Drive</v:street-address>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b6">
+<rdf:Description rdf:nodeID="b5">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Provider" /></rdf:Description>
-<rdf:Description rdf:nodeID="b6">
+<rdf:Description rdf:nodeID="b5">
    <sp:deaNumber>325555555</sp:deaNumber>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b6">
+<rdf:Description rdf:nodeID="b5">
    <sp:npiNumber>5235235</sp:npiNumber>
 </rdf:Description>
+<rdf:Description rdf:nodeID="b5">
+   <v:n rdf:nodeID="b6" /></rdf:Description>
 <rdf:Description rdf:nodeID="b6">
-   <v:n rdf:nodeID="b7" /></rdf:Description>
-<rdf:Description rdf:nodeID="b7">
    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Name" /></rdf:Description>
-<rdf:Description rdf:nodeID="b7">
+<rdf:Description rdf:nodeID="b6">
    <v:family-name>Mandel</v:family-name>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b7">
+<rdf:Description rdf:nodeID="b6">
    <v:given-name>Joshua</v:given-name>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b8">
+<rdf:Description rdf:nodeID="b7">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#ValueAndUnit" /></rdf:Description>
-<rdf:Description rdf:nodeID="b8">
+<rdf:Description rdf:nodeID="b7">
    <sp:unit>{tablet}</sp:unit>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b8">
+<rdf:Description rdf:nodeID="b7">
    <sp:value>60</sp:value>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b9">
+<rdf:Description rdf:nodeID="b8">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Pharmacy" /></rdf:Description>
-<rdf:Description rdf:nodeID="b9">
+<rdf:Description rdf:nodeID="b8">
    <sp:ncpdpId>5235235</sp:ncpdpId>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b9">
+<rdf:Description rdf:nodeID="b8">
    <sp:organizationName>CVS #588</sp:organizationName>
 </rdf:Description>
+<rdf:Description rdf:nodeID="b8">
+   <v:adr rdf:nodeID="b9" /></rdf:Description>
 <rdf:Description rdf:nodeID="b9">
-   <v:adr rdf:nodeID="b10" /></rdf:Description>
+   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Address" /></rdf:Description>
+<rdf:Description rdf:nodeID="b9">
+   <v:country>Australia</v:country>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b9">
+   <v:locality>WonderCity</v:locality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b9">
+   <v:postal-code>5555</v:postal-code>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b9">
+   <v:street-address>111 Lake Drive</v:street-address>
+</rdf:Description>
 <rdf:Description rdf:about="http://purl.bioontology.org/ontology/RXNORM/856845">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Code" /></rdf:Description>
 <rdf:Description rdf:about="http://purl.bioontology.org/ontology/RXNORM/856845">
@@ -139,7 +510,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
    <dcterms:title>Amitriptyline HCl 50 mg tab</dcterms:title>
 </rdf:Description>
 <rdf:Description rdf:about="http://purl.bioontology.org/ontology/RXNORM/856845">
-   <sp:system rdf:resource="RxNorm" /></rdf:Description>
+   <sp:system>RxNorm</sp:system>
+</rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/def">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Fulfillment" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/def">
@@ -156,11 +528,11 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
    <sp:pbm>T00000000001011</sp:pbm>
 </rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/def">
-   <sp:pharmacy rdf:nodeID="b4" /></rdf:Description>
+   <sp:pharmacy rdf:nodeID="b3" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/def">
-   <sp:provider rdf:nodeID="b6" /></rdf:Description>
+   <sp:provider rdf:nodeID="b5" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/def">
-   <sp:quantityDispensed rdf:nodeID="b8" /></rdf:Description>
+   <sp:quantityDispensed rdf:nodeID="b7" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/ghi">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Fulfillment" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/ghi">
@@ -177,31 +549,31 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
    <sp:pbm>T00000000001011</sp:pbm>
 </rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/ghi">
-   <sp:pharmacy rdf:nodeID="b9" /></rdf:Description>
+   <sp:pharmacy rdf:nodeID="b8" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/ghi">
-   <sp:provider rdf:nodeID="b11" /></rdf:Description>
+   <sp:provider rdf:nodeID="b10" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/fulfillments/ghi">
-   <sp:quantityDispensed rdf:nodeID="b13" /></rdf:Description>
+   <sp:quantityDispensed rdf:nodeID="b12" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Medication" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
    <sp:belongsTo rdf:resource="http://smart-server/records/2169591" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
-   <sp:drugName rdf:nodeID="b1" /></rdf:Description>
+   <sp:drugName rdf:nodeID="b0" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
    <sp:endDate>2007-08-14</sp:endDate>
 </rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
-   <sp:frequency rdf:nodeID="b2" /></rdf:Description>
+   <sp:frequency rdf:nodeID="b1" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
-   <sp:fulfillments rdf:resource="http://smart-server/records/2169591/fulfillments/def" /></rdf:Description>
+   <sp:fulfillment rdf:resource="http://smart-server/records/2169591/fulfillments/def" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
-   <sp:fulfillments rdf:resource="http://smart-server/records/2169591/fulfillments/ghi" /></rdf:Description>
+   <sp:fulfillment rdf:resource="http://smart-server/records/2169591/fulfillments/ghi" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
    <sp:instructions>Take two tablets twice daily as needed for pain</sp:instructions>
 </rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
-   <sp:quantity rdf:nodeID="b3" /></rdf:Description>
+   <sp:quantity rdf:nodeID="b2" /></rdf:Description>
 <rdf:Description rdf:about="http://smart-server/records/2169591/medications/123">
    <sp:startDate>2007-03-14</sp:startDate>
 </rdf:Description>
