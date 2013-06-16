@@ -8,7 +8,7 @@
   },
   "browser": {
     "./request": false,
-    "../jsonld": false,
+    "../vendor/jsonld": false,
     "xmldom": false
   },
   "dependencies": {
