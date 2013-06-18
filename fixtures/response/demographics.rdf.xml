@@ -3,68 +3,77 @@ xmlns:foaf="http://xmlns.com/foaf/0.1/"
 xmlns:v="http://www.w3.org/2006/vcard/ns#"
 xmlns:sp="http://smartplatforms.org/terms#"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nodeID="b0">
-   <rdf:type rdf:resource="http://smartplatforms.org/terms#Code" /></rdf:Description>
+   <sp:unit>wk</sp:unit>
+</rdf:Description>
 <rdf:Description rdf:nodeID="b0">
+   <sp:value>37.6</sp:value>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b1">
+   <rdf:type rdf:resource="http://smartplatforms.org/terms#Code" /></rdf:Description>
+<rdf:Description rdf:nodeID="b1">
    <dcterms:identifier>2304575</dcterms:identifier>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b0">
+<rdf:Description rdf:nodeID="b1">
    <dcterms:title>My Hospital Record 2304575</dcterms:title>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b0">
+<rdf:Description rdf:nodeID="b1">
    <sp:system>My Hospital Record</sp:system>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b1">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Pref" /></rdf:Description>
-<rdf:Description rdf:nodeID="b1">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Home" /></rdf:Description>
-<rdf:Description rdf:nodeID="b1">
-   <rdf:type rdf:resource="http://smartplatforms.org/terms#Address" /></rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b2">
    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Address" /></rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b2">
    <v:country>USA</v:country>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b2">
    <v:extended-address>Apt 2</v:extended-address>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b2">
    <v:locality>Wonderland</v:locality>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b2">
    <v:postal-code>54321</v:postal-code>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b2">
    <v:region>OZ</v:region>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b1">
+<rdf:Description rdf:nodeID="b2">
    <v:street-address>15 Main St</v:street-address>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b2">
+<rdf:Description rdf:nodeID="b3">
    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Name" /></rdf:Description>
-<rdf:Description rdf:nodeID="b2">
+<rdf:Description rdf:nodeID="b3">
    <v:additional-name>J</v:additional-name>
 </rdf:Description>
-<rdf:Description rdf:nodeID="b2">
-   <v:family-name>Vitalis</v:family-name>
-</rdf:Description>
-<rdf:Description rdf:nodeID="b2">
-   <v:given-name>Allen</v:given-name>
+<rdf:Description rdf:nodeID="b3">
+   <v:family-name>Odenkirk</v:family-name>
 </rdf:Description>
 <rdf:Description rdf:nodeID="b3">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Cell" /></rdf:Description>
-<rdf:Description rdf:nodeID="b3">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Tel" /></rdf:Description>
-<rdf:Description rdf:nodeID="b3">
-   <rdf:value>800-555-1515</rdf:value>
+   <v:given-name>Bob</v:given-name>
 </rdf:Description>
 <rdf:Description rdf:nodeID="b4">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Pref" /></rdf:Description>
+   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Tel" /></rdf:Description>
 <rdf:Description rdf:nodeID="b4">
    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Home" /></rdf:Description>
 <rdf:Description rdf:nodeID="b4">
-   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Tel" /></rdf:Description>
+   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Pref" /></rdf:Description>
+<rdf:Description rdf:nodeID="b4">
+   <sp:tags>Home</sp:tags>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b4">
+   <sp:tags>Pref</sp:tags>
+</rdf:Description>
 <rdf:Description rdf:nodeID="b4">
    <rdf:value>800-555-1212</rdf:value>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b5">
+   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Tel" /></rdf:Description>
+<rdf:Description rdf:nodeID="b5">
+   <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Cell" /></rdf:Description>
+<rdf:Description rdf:nodeID="b5">
+   <sp:tags>Cell</sp:tags>
+</rdf:Description>
+<rdf:Description rdf:nodeID="b5">
+   <rdf:value>800-555-1515</rdf:value>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <rdf:type rdf:resource="http://smartplatforms.org/terms#Demographics" /></rdf:Description>
@@ -74,7 +83,9 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
    <sp:ethnicity>Welsh</sp:ethnicity>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <sp:medicalRecordNumber rdf:nodeID="b0" /></rdf:Description>
+   <sp:gestationalAgeAtBirth rdf:nodeID="b0" /></rdf:Description>
+<rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
+   <sp:medicalRecordNumber rdf:nodeID="b1" /></rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <sp:preferredLanguage>English</sp:preferredLanguage>
 </rdf:Description>
@@ -82,22 +93,22 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
    <sp:race>Caucasian</sp:race>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:adr rdf:nodeID="b1" /></rdf:Description>
+   <v:adr rdf:nodeID="b2" /></rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:bday>2006-04-11</v:bday>
+   <v:bday>1959-12-25</v:bday>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:deathdate>2092-11-18</v:deathdate>
+   <v:deathdate>2012-11-18</v:deathdate>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <v:email>bob.odenkirk@example.com</v:email>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:n rdf:nodeID="b2" /></rdf:Description>
-<rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:tel rdf:nodeID="b3" /></rdf:Description>
+   <v:n rdf:nodeID="b3" /></rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <v:tel rdf:nodeID="b4" /></rdf:Description>
+<rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
+   <v:tel rdf:nodeID="b5" /></rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <foaf:gender>male</foaf:gender>
 </rdf:Description>
