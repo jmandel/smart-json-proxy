@@ -1,227 +1,3 @@
-[ { url: 'http://sandbox-api.smartplatforms.org/records/2169591/demographics',
-    type: 'Demographics',
-    patient: 'http://sandbox-api.smartplatforms.org/records/2169591',
-    ethnicity: 'Welsh',
-    gender: 'male',
-    medicalRecordNumber: [ [Object] ],
-    preferredLanguage: 'English',
-    race: 'Caucasian',
-    address: 
-     { type: [Object],
-       country: 'USA',
-       streetAddress: '15 Main St',
-       extendedAddress: 'Apt 2',
-       locality: 'Wonderland',
-       region: 'OZ',
-       postalCode: '54321' },
-    birthdate: '2001-12-25',
-    deathdate: '2012-11-18',
-    email: [ 'bob.odenkirk@example.com' ],
-    name: 
-     { givenName: 'Bob',
-       additionalName: [Object],
-       familyName: 'Odenkirk' },
-    phone: [ [Object], [Object] ] } ]
-{
-  "@context": {
-    "@vocab": "http://smartplatforms.org/terms#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "sp": "http://smartplatforms.org/terms#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "dcterms": "http://purl.org/dc/terms/",
-    "foaf": "http://xmlns.com/foaf/0.1/",
-    "v": "http://www.w3.org/2006/vcard/ns#",
-    "identifier": "dcterms:identifier",
-    "label": "dcterms:title",
-    "url": "@id",
-    "type": "@type",
-    "patient": {
-      "@id": "belongsTo",
-      "@type": "@id"
-    },
-    "hasStatement": {
-      "@type": "@id"
-    },
-    "date": "dcterms:date",
-    "additionalName": {
-      "@id": "v:additional-name",
-      "@container": "@set"
-    },
-    "familyName": "v:family-name",
-    "phone": "v:tel",
-    "Cell": "v:Cell",
-    "Pref": "v:Pref",
-    "Home": "v:Home",
-    "Work": "v:Work",
-    "Fulfillment": {
-      "@type": "@id"
-    },
-    "name": "v:n",
-    "email": "v:email",
-    "birthdate": "v:bday",
-    "deathdate": "v:deathdate",
-    "givenName": "v:given-name",
-    "address": "v:adr",
-    "streetAddress": "v:street-address",
-    "extendedAddress": "v:extended-address",
-    "region": "v:region",
-    "postalCode": "v:postal-code",
-    "country": "v:country",
-    "locality": "v:locality",
-    "Medication": {
-      "@type": "@id"
-    },
-    "medication": {
-      "@type": "@id"
-    },
-    "fulfillment": {
-      "@type": "@id",
-      "@contianer": "@set"
-    },
-    "encounter": {
-      "@type": "@id"
-    },
-    "self": {
-      "@type": "@id"
-    },
-    "gender": "foaf:gender",
-    "medicalRecordNumber": {
-      "@container": "@set"
-    }
-  },
-  "@graph": [
-    {
-      "url": "http://sandbox-api.smartplatforms.org/records/2169591/demographics",
-      "type": "Demographics",
-      "patient": "http://sandbox-api.smartplatforms.org/records/2169591",
-      "ethnicity": "Welsh",
-      "gender": "male",
-      "medicalRecordNumber": [
-        {
-          "label": "My Hospital Record 2304575",
-          "system": "My Hospital Record",
-          "type": [
-            "Code"
-          ],
-          "identifier": "2304575"
-        }
-      ],
-      "preferredLanguage": "English",
-      "race": "Caucasian",
-      "address": {
-        "type": [
-          "Pref",
-          "Home",
-          "Address",
-          "v:Address"
-        ],
-        "country": "USA",
-        "streetAddress": "15 Main St",
-        "extendedAddress": "Apt 2",
-        "locality": "Wonderland",
-        "region": "OZ",
-        "postalCode": "54321"
-      },
-      "birthdate": "2001-12-25",
-      "deathdate": "2012-11-18",
-      "email": [
-        "bob.odenkirk@example.com"
-      ],
-      "name": {
-        "givenName": "Bob",
-        "additionalName": [
-          "J"
-        ],
-        "familyName": "Odenkirk",
-        "type": [
-          "v:Name"
-        ]
-      },
-      "phone": [
-        {
-          "type": [
-            "Cell",
-            "v:Tel"
-          ],
-          "rdf:value": "800-555-1515"
-        },
-        {
-          "type": [
-            "Pref",
-            "Home",
-            "v:Tel"
-          ],
-          "rdf:value": "800-555-1212"
-        }
-      ]
-    }
-  ]
-}
-[ { url: 'http://sandbox-api.smartplatforms.org/records/2169591/demographics',
-    type: 'Demographics',
-    patient: 'http://sandbox-api.smartplatforms.org/records/2169591',
-    ethnicity: 'Welsh',
-    gender: 'male',
-    medicalRecordNumber: [ [Object] ],
-    preferredLanguage: 'English',
-    race: 'Caucasian',
-    address: 
-     { type: [Object],
-       country: 'USA',
-       streetAddress: '15 Main St',
-       extendedAddress: 'Apt 2',
-       locality: 'Wonderland',
-       region: 'OZ',
-       postalCode: '54321' },
-    birthdate: '2001-12-25',
-    deathdate: '2012-11-18',
-    email: [ 'bob.odenkirk@example.com' ],
-    name: 
-     { givenName: 'Bob',
-       additionalName: [Object],
-       familyName: 'Odenkirk',
-       type: [Object] },
-    phone: [ [Object], [Object] ] } ]
-null { '@default': 
-   [ { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] },
-     { subject: [Object], predicate: [Object], object: [Object] } ] }
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:foaf="http://xmlns.com/foaf/0.1/"
 xmlns:v="http://www.w3.org/2006/vcard/ns#"
@@ -269,10 +45,10 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
    <v:additional-name>J</v:additional-name>
 </rdf:Description>
 <rdf:Description rdf:nodeID="b2">
-   <v:family-name>Odenkirk</v:family-name>
+   <v:family-name>Vitalis</v:family-name>
 </rdf:Description>
 <rdf:Description rdf:nodeID="b2">
-   <v:given-name>Bob</v:given-name>
+   <v:given-name>Allen</v:given-name>
 </rdf:Description>
 <rdf:Description rdf:nodeID="b3">
    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Cell" /></rdf:Description>
@@ -308,10 +84,10 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <v:adr rdf:nodeID="b1" /></rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:bday>2001-12-25</v:bday>
+   <v:bday>2006-04-11</v:bday>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:deathdate>2012-11-18</v:deathdate>
+   <v:deathdate>2092-11-18</v:deathdate>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <v:email>bob.odenkirk@example.com</v:email>
