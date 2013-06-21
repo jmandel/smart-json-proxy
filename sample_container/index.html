@@ -4,6 +4,7 @@
   <head>
     <title>SMART Container Example</title>
     <link rel='stylesheet' href='styles.css' type='text/css' />
+    <script src="polyfill.js"></script>
     <script src="jquery.min.js"></script>
     <script src="jschannel.js"></script>
     <script src="smart-api-container.js"></script>
@@ -16,6 +17,21 @@
 
   <body>
     <script>
+        $.ajax({url: "../fixtures/response/demographics.json", dataType: "text"})
+        .success(function(data){
+          console.log("converting");
+          convert({
+            from: "application/json",
+            to: "application/rdf+xml",
+            body: data
+            }, function(err, rdf){
+              console.log("rdf");
+              console.log(err, rdf);
+          });
+        
+        });
+
+
       // Sample implementations of SMART Connect Host glue methods
       SMART = new SMART_CONNECT_HOST();
 
@@ -53,14 +69,13 @@
         // converts a JSON structure into SMART RDF/XML
         function process(data){
           console.log("converting");
-          console.log(data);
           convert({
             from: "application/json",
             to: "application/rdf+xml",
             body: data
             }, function(err, rdf){
               console.log("rdf");
-              console.log(rdf, err);
+              console.log(err, rdf);
 
             // Invoke the caller's error handler if something went wrong
             if (err){

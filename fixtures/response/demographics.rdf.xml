@@ -95,10 +95,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:nod
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <v:adr rdf:nodeID="b2" /></rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:bday>1959-12-25</v:bday>
-</rdf:Description>
-<rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
-   <v:deathdate>2012-11-18</v:deathdate>
+   <v:bday>2006-04-11</v:bday>
 </rdf:Description>
 <rdf:Description rdf:about="http://sandbox-api.smartplatforms.org/records/2169591/demographics">
    <v:email>bob.odenkirk@example.com</v:email>

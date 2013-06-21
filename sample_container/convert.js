@@ -476,22 +476,6 @@ module.exports={
   "medicalRecordNumber": {"@container": "@set"}
 }
 
-},{}],9:[function(require,module,exports){
-module.exports = [
-  "MedicalRecord",
-  "Demographics",
-  "Medication",
-  "VitalSignSet",
-  "Encounter",
-  "Fulfillment",
-  "Allergy",
-  "AllergyExclusion",
-  "LabResult",
-  "Problem",
-  "SocialHistory",
-  "Immunization"
-];
-
 },{}],8:[function(require,module,exports){
 module.exports = [
   ["drugName", "CodedValue"],
@@ -517,6 +501,22 @@ module.exports = [
 ];
 
 
+
+},{}],9:[function(require,module,exports){
+module.exports = [
+  "MedicalRecord",
+  "Demographics",
+  "Medication",
+  "VitalSignSet",
+  "Encounter",
+  "Fulfillment",
+  "Allergy",
+  "AllergyExclusion",
+  "LabResult",
+  "Problem",
+  "SocialHistory",
+  "Immunization"
+];
 
 },{}],11:[function(require,module,exports){
 var curies = {
