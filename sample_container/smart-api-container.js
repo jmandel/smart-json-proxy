@@ -54,25 +54,21 @@ window.SMART_CONNECT_HOST = function() {
     
     sc.get_api_base = function(app_instance, callback) {
         var warning = "Please override SMART_CONNECT_HOST.get_api for SMART REST apps";
-        console.log(warning);
         callback(null);
     };
     
     sc.get_iframe = function() {
         var err = "Must override SMART_CONNECT_HOST.get_iframe";
-        console.log(err);
         throw err;
     };
     
     sc.handle_api = function() {
         var err = "Must override SMART_CONNECT_HOST.handle_api";
-        console.log(err);
         throw err;
     };
 
     sc.display_app = function() {
     var err = "Must override SMART_CONNECT_HOST.display_ap";
-    console.log(err);
     throw err;
     };
     

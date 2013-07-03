@@ -19,14 +19,11 @@
     <script>
         $.ajax({url: "../fixtures/response/demographics.json", dataType: "text"})
         .success(function(data){
-          console.log("converting");
           convert({
             from: "application/json",
             to: "application/rdf+xml",
             body: data
             }, function(err, rdf){
-              console.log("rdf");
-              console.log(err, rdf);
           });
         
         });
@@ -68,14 +65,11 @@
 
         // converts a JSON structure into SMART RDF/XML
         function process(data){
-          console.log("converting");
           convert({
             from: "application/json",
             to: "application/rdf+xml",
             body: data
             }, function(err, rdf){
-              console.log("rdf");
-              console.log(err, rdf);
 
             // Invoke the caller's error handler if something went wrong
             if (err){
